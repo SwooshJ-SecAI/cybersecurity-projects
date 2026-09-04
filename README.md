@@ -1,95 +1,62 @@
 # Cybersecurity Projects
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![Security](https://img.shields.io/badge/Domain-Cybersecurity-blue?style=flat-square)
-![Automation](https://img.shields.io/badge/Focus-Automation-green?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-ED1C24?style=flat&logoColor=white)
+![CISA KEV](https://img.shields.io/badge/CISA%20KEV-005288?style=flat&logoColor=white)
 
-Production-grade cybersecurity tools, threat intelligence pipelines, compliance automation, and ITSM integrations. Each project addresses a real-world security operations challenge with working code, architecture documentation, and deployment guidance.
-
-Built with [Amazon Quick](https://amazon.com/quick).
+Security tooling, threat intelligence platforms, compliance automation, and a catalog of vendor-specific AI agents for security operations.
 
 ---
 
-## Description
+## Overview
 
-This repository contains cybersecurity engineering projects developed to solve operational security problems at enterprise scale. The work spans threat intelligence collection and scoring, vulnerability management, compliance policy generation, ITSM ticket automation, and vendor-specific security tool integration.
+This repository collects production-tested security engineering work spanning four areas: a real-time threat intelligence platform, a fleet of vendor-specific security operations agents, compliance automation tooling, and supporting integrations. The emphasis is on turning manual, repetitive security workflows into automated systems that surface signal instead of noise.
 
-Every project in this repository originated from production use cases and reflects practical security engineering rather than theoretical exercises.
+**What's inside:**
 
-## Projects
+- **15 security AI agents** — see the [Agent Catalog](./AGENTS.md)
+- **17 reusable AI skills** — see the [amazon-quick-skills](https://github.com/SwooshJ-SecAI/amazon-quick-skills) repository
+- **CICC threat intelligence platform** — full ingestion, enrichment, and scoring pipeline
 
-### Cyber Intelligence Command Center (CICC)
+---
 
-An external threat intelligence aggregation platform that pulls live data from CISA KEV, NVD, EPSS, and multiple RSS attack landscape feeds. Enriches and scores events against an organizational technology watchlist, producing prioritized intelligence briefs and situational awareness reports.
+## Structure
 
-**Key capabilities:**
-- Automated data ingestion from five external intelligence sources
-- CVSS and EPSS-based vulnerability scoring and prioritization
-- Technology watchlist matching for organizational relevance
-- Situational report generation (SITREP, morning standup briefs)
-- Historical trend analysis and threat actor tracking
+### [cicc/](./cicc/)
+The Cyber Intelligence Command Center — a real-time threat intelligence platform that aggregates CISA KEV, NVD, EPSS, and RSS feeds, enriches disclosures against a technology watchlist, and scores them into prioritized, actionable briefings. Includes the ingestion pipeline, interactive dashboard, executive briefings, and a [design decisions](./cicc/DESIGN_DECISIONS.md) write-up.
 
-### Vulnerability Report Summarizer
+### [security-agents/](./security-agents/)
+Eight vendor-specific subject matter expert agents covering the operational security stack: Splunk, Arctic Wolf, Microsoft Purview, Freshservice ITSM, SecurityScorecard, Darktrace, Palo Alto Networks, and SentinelOne. Each agent carries its own knowledge base (operational reference, query language guide, remediation playbooks). See the [design decisions](./security-agents/DESIGN_DECISIONS.md) for the architecture rationale.
 
-Transforms raw vulnerability scan output from Nessus, Qualys, OWASP ZAP, and similar tools into executive-ready security reports. Scores findings by CVSS, maps to MITRE ATT&CK where applicable, and produces both technical and executive summaries with prioritized remediation plans.
+### [compliance-automation/](./compliance-automation/)
+SOC 2, ISO 27001, and HIPAA compliance tooling — evidence collection, control-to-evidence mapping, quarterly audit comparison, and audit-ready reporting. Includes three compliance agents and a [design decisions](./compliance-automation/DESIGN_DECISIONS.md) write-up.
 
-### Compliance Automation Framework
+### [vulnerability-scanner/](./vulnerability-scanner/)
+Vulnerability report summarization — transforms raw scan output (Nessus, Qualys, ZAP) into executive-ready reports with CVSS scoring and MITRE ATT&CK mapping.
 
-Generates draft compliance policies for SOC 2 Type I/II, ISO 27001, and HIPAA. Produces evidence collection checklists, control mapping matrices, and gap analysis reports from existing documentation. Designed to accelerate audit preparation from weeks to hours.
+### [freshservice-integration/](./freshservice-integration/)
+ITSM automation — end-to-end ticket creation, intelligent routing, and stakeholder notification against a Freshservice instance.
 
-### Freshservice ITSM Integration
-
-Full Freshservice ITSM integration pipeline covering ticket creation, closure, querying, updating, notes, reassignment, escalation, asset management, agent and group listing, change requests, problems, and releases. Five composable Python modules provide complete API surface coverage.
-
-### Security Tool Agent Builder
-
-Framework for building vendor-specific security tool SME agents with comprehensive knowledge bases. Produces specialized agents that help navigate, query, triage, and remediate across security platforms including Arctic Wolf, SentinelOne, Palo Alto, Darktrace, SecurityScorecard, Freshservice, and Microsoft Purview.
-
-## Repository Structure
-
-```
-cybersecurity-projects/
-|-- cicc/                        # Cyber Intelligence Command Center
-|   |-- README.md
-|-- vulnerability-scanner/       # Vulnerability report summarizer
-|   |-- README.md
-|-- compliance-automation/       # Compliance policy and audit automation
-|   |-- README.md
-|-- freshservice-integration/    # Freshservice ITSM pipeline
-|   |-- README.md
-|-- security-agents/             # Security tool agent builder
-|   |-- README.md
-|-- .gitignore
-|-- README.md
-```
-
-## Technology Stack
-
-| Component          | Technology                                    |
-|--------------------|-----------------------------------------------|
-| Language           | Python 3.10+                                  |
-| Cloud              | AWS                                           |
-| Intelligence Feeds | CISA KEV, NVD, EPSS, RSS                      |
-| ITSM               | Freshservice API                              |
-| Frameworks         | SOC 2, ISO 27001, HIPAA, MITRE ATT&CK        |
-| Platform           | Amazon Quick                                  |
+---
 
 ## Getting Started
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/ajohnson/cybersecurity-projects.git
-   cd cybersecurity-projects
-   ```
-2. Navigate to the project directory of interest
-3. Follow the project-specific README for setup and configuration
-4. Review architecture documentation before modifying pipelines
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+Each subfolder is self-contained with its own README. Start with the [CICC platform](./cicc/) for the most complete end-to-end example, or browse the [Agent Catalog](./AGENTS.md) to see the full range of security operations agents.
 
 ---
 
-**Author:** Antonio Johnson | Security Engineer II / Enterprise AI Engineer
+## Built With
+
+Built with [Amazon Quick](https://github.com/SwooshJ-SecAI). Agents, skills, and automation pipelines were developed on the Amazon Quick platform and sanitized for public release.
+
+---
+
+## License
+
+MIT
+
+---
+
+*Part of the [SwooshJ-SecAI](https://github.com/SwooshJ-SecAI) security and AI engineering portfolio.*
