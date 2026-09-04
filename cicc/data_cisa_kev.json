@@ -1,0 +1,2442 @@
+{
+  "metadata": {
+    "source": "CISA Known Exploited Vulnerabilities Catalog",
+    "catalogVersion": "2026.08.31",
+    "fetchDate": "2026-09-01T14:00:00",
+    "totalCatalogSize": 1687,
+    "windowDays": 30,
+    "eventsInWindow": 31,
+    "directMatches": 4
+  },
+  "events": [
+    {
+      "cve": "CVE-2026-33824",
+      "vendor": "Microsoft",
+      "product": "Internet Key Exchange (IKE) Service Extensions",
+      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
+      "dateAdded": "2026-08-18",
+      "dueDate": "2026-08-21",
+      "ransomware": "Unknown",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.72695,
+      "relevanceScore": 94,
+      "relevanceClass": "Critical",
+      "scoreBreakdown": {
+        "score": 94,
+        "classification": "Critical",
+        "factors": [
+          {
+            "factor": "Technology Match",
+            "points": 20,
+            "reason": "DIRECT -- Microsoft"
+          },
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "Product Criticality",
+            "points": 6,
+            "reason": "Critical infra"
+          },
+          {
+            "factor": "EPSS",
+            "points": 5,
+            "reason": "72.7%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "14d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-55040",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "dateAdded": "2026-08-18",
+      "dueDate": "2026-08-21",
+      "ransomware": "Unknown",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.1,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "epss": 0.39652,
+      "relevanceScore": 86,
+      "relevanceClass": "High",
+      "scoreBreakdown": {
+        "score": 86,
+        "classification": "High",
+        "factors": [
+          {
+            "factor": "Technology Match",
+            "points": 20,
+            "reason": "DIRECT -- Microsoft"
+          },
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.1"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "39.7%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "14d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2019-1068",
+      "vendor": "Microsoft",
+      "product": "SQL Server",
+      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
+      "dateAdded": "2026-08-26",
+      "dueDate": "2026-08-29",
+      "ransomware": "Unknown",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 8.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.52845,
+      "relevanceScore": 85,
+      "relevanceClass": "High",
+      "scoreBreakdown": {
+        "score": 85,
+        "classification": "High",
+        "factors": [
+          {
+            "factor": "Technology Match",
+            "points": 20,
+            "reason": "DIRECT -- Microsoft"
+          },
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "8.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "52.8%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "6d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-68820",
+      "vendor": "Microsoft",
+      "product": "Windows Ancillary Function Driver for WinSock ",
+      "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
+      "dateAdded": "2026-08-11",
+      "dueDate": "2026-08-25",
+      "ransomware": "Unknown",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 7.0,
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.06184,
+      "relevanceScore": 79,
+      "relevanceClass": "High",
+      "scoreBreakdown": {
+        "score": 79,
+        "classification": "High",
+        "factors": [
+          {
+            "factor": "Technology Match",
+            "points": 20,
+            "reason": "DIRECT -- Microsoft"
+          },
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "7.0"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "6.2%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "21d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 1,
+            "reason": "Local"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-60004",
+      "vendor": "Gitea",
+      "product": "Gitea",
+      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
+      "dateAdded": "2026-08-25",
+      "dueDate": "2026-08-28",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.86777,
+      "relevanceScore": 69,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 69,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 5,
+            "reason": "86.8%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "7d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-18556",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
+      "dateAdded": "2026-08-04",
+      "dueDate": "2026-08-07",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 8.2,
+      "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.40158,
+      "relevanceScore": 69,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 69,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "8.2"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "Product Criticality",
+            "points": 6,
+            "reason": "Critical infra"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "40.2%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "28d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-18577",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.",
+      "dateAdded": "2026-08-03",
+      "dueDate": "2026-08-06",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 8.2,
+      "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:L/SI:L/SA:L/E:A/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.54068,
+      "relevanceScore": 69,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 69,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "8.2"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "Product Criticality",
+            "points": 6,
+            "reason": "Critical infra"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "54.1%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "29d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2023-49105",
+      "vendor": "ownCloud",
+      "product": "ownCloud",
+      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
+      "dateAdded": "2026-08-27",
+      "dueDate": "2026-08-30",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.43205,
+      "relevanceScore": 67,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 67,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "43.2%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "5d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2021-23758",
+      "vendor": "Ajax.NET Professional",
+      "product": "Ajax.NET Professional",
+      "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "dateAdded": "2026-08-26",
+      "dueDate": "2026-09-09",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 8.1,
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.83633,
+      "relevanceScore": 67,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 67,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "8.1"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 5,
+            "reason": "83.6%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "6d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-72898",
+      "vendor": "Metabase",
+      "product": "Metabase",
+      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
+      "dateAdded": "2026-08-11",
+      "dueDate": "2026-08-14",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 10.0,
+      "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.82323,
+      "relevanceScore": 67,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 67,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "10.0"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 5,
+            "reason": "82.3%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "21d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-63077",
+      "vendor": "JetBrains",
+      "product": "TeamCity",
+      "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
+      "dateAdded": "2026-08-05",
+      "dueDate": "2026-08-08",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.87709,
+      "relevanceScore": 67,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 67,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 5,
+            "reason": "87.7%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "27d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-21962",
+      "vendor": "Oracle",
+      "product": "HTTP Server and Oracle Weblogic Server Proxy Plug-in",
+      "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data.",
+      "dateAdded": "2026-08-24",
+      "dueDate": "2026-08-27",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 10.0,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "epss": 0.4202,
+      "relevanceScore": 66,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 66,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "10.0"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "42.0%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "8d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-59310",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "dateAdded": "2026-08-18",
+      "dueDate": "2026-08-21",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.45878,
+      "relevanceScore": 66,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 66,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "45.9%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "14d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-82078",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process. This vulnerability can be chained with CVE-2026-81578.",
+      "dateAdded": "2026-08-31",
+      "dueDate": "2026-09-14",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.4,
+      "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.00926,
+      "relevanceScore": 65,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 65,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.4"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "0.9%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "1d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-64849",
+      "vendor": "MLflow",
+      "product": "MLflow",
+      "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
+      "dateAdded": "2026-08-19",
+      "dueDate": "2026-09-02",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.3,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N",
+      "epss": 0.1641,
+      "relevanceScore": 65,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 65,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.3"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 2,
+            "reason": "16.4%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "13d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-9198",
+      "vendor": "IBM",
+      "product": "Langflow",
+      "description": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
+      "dateAdded": "2026-08-04",
+      "dueDate": "2026-08-07",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.34734,
+      "relevanceScore": 65,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 65,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 3,
+            "reason": "34.7%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "28d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-72530",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
+      "dateAdded": "2026-08-20",
+      "dueDate": "2026-09-03",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.5,
+      "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.01827,
+      "relevanceScore": 64,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 64,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.5"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "1.8%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "12d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-72529",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
+      "dateAdded": "2026-08-20",
+      "dueDate": "2026-08-23",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.3,
+      "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.01554,
+      "relevanceScore": 64,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 64,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.3"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "1.6%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "12d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-65400",
+      "vendor": "Apple",
+      "product": "macOS",
+      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
+      "dateAdded": "2026-08-18",
+      "dueDate": "2026-08-21",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.8,
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.09905,
+      "relevanceScore": 64,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 64,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "9.9%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "14d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2025-62593",
+      "vendor": "Ray-Project",
+      "product": "Ray",
+      "description": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
+      "dateAdded": "2026-08-17",
+      "dueDate": "2026-08-20",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.4,
+      "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.16888,
+      "relevanceScore": 64,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 64,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.4"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 2,
+            "reason": "16.9%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "15d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-8037",
+      "vendor": "Progress",
+      "product": "LoadMaster",
+      "description": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.",
+      "dateAdded": "2026-08-07",
+      "dueDate": "2026-08-10",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 9.6,
+      "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "epss": 0.99571,
+      "relevanceScore": 64,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 64,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 8,
+            "reason": "9.6"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 5,
+            "reason": "99.6%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "25d"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-81578",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-2026-82078.",
+      "dateAdded": "2026-08-31",
+      "dueDate": "2026-09-14",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 8.8,
+      "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.00771,
+      "relevanceScore": 63,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 63,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "8.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "0.8%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "1d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-8452",
+      "vendor": "Citrix",
+      "product": "NetScaler ADC and NetScaler Gateway",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service. ",
+      "dateAdded": "2026-08-26",
+      "dueDate": "2026-08-29",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 8.8,
+      "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:H/SC:L/SI:L/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "epss": 0.01606,
+      "relevanceScore": 63,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 63,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "8.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "1.6%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "6d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-73570",
+      "vendor": "Synacor",
+      "product": "Zimbra Collaboration Suite (ZCS)",
+      "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+      "dateAdded": "2026-08-21",
+      "dueDate": "2026-08-24",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 8.9,
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+      "epss": 0.20528,
+      "relevanceScore": 63,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 63,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "8.9"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 2,
+            "reason": "20.5%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 2,
+            "reason": "11d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-53362",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. ",
+      "dateAdded": "2026-08-27",
+      "dueDate": "2026-08-30",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 7.8,
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.0051,
+      "relevanceScore": 61,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 61,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "7.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "0.5%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "5d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 1,
+            "reason": "Local"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-66384",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under specific remote-repository conditions.",
+      "dateAdded": "2026-08-27",
+      "dueDate": "2026-09-10",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 5.3,
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "epss": 0.00579,
+      "relevanceScore": 61,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 61,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 4,
+            "reason": "5.3"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "0.6%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "5d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 3,
+            "reason": "Network"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2015-5287",
+      "vendor": "Red Hat",
+      "product": "Automatic Bug Reporting Tool",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "dateAdded": "2026-08-26",
+      "dueDate": "2026-09-09",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 7.8,
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.04962,
+      "relevanceScore": 61,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 61,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "7.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "5.0%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "6d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 1,
+            "reason": "Local"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2022-0995",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "dateAdded": "2026-08-26",
+      "dueDate": "2026-09-09",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 7.8,
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "epss": 0.09518,
+      "relevanceScore": 61,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 61,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 6,
+            "reason": "7.8"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "9.5%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "6d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 1,
+            "reason": "Local"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2015-3246",
+      "vendor": "Red Hat",
+      "product": "Libuser",
+      "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
+      "dateAdded": "2026-08-26",
+      "dueDate": "2026-09-09",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "cvss": 5.1,
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "epss": 0.08799,
+      "relevanceScore": 59,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 59,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "CVSS",
+            "points": 4,
+            "reason": "5.1"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "8.8%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 3,
+            "reason": "6d"
+          },
+          {
+            "factor": "Attack Vector",
+            "points": 1,
+            "reason": "Local"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-20349",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+      "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "dateAdded": "2026-08-11",
+      "dueDate": "2026-08-14",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "epss": 0.02213,
+      "relevanceScore": 58,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 58,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "Product Criticality",
+            "points": 6,
+            "reason": "Critical infra"
+          },
+          {
+            "factor": "EPSS",
+            "points": 1,
+            "reason": "2.2%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "21d"
+          }
+        ]
+      }
+    },
+    {
+      "cve": "CVE-2026-34486",
+      "vendor": "Apache",
+      "product": "Tomcat",
+      "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE\u20112025\u201124813.",
+      "dateAdded": "2026-08-04",
+      "dueDate": "2026-08-07",
+      "ransomware": "Unknown",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "activeExploitation": true,
+      "cisaKEV": true,
+      "globalSeverity": "Critical",
+      "eventType": "Vulnerability",
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "role": "Exploitation Confirmed",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        }
+      ],
+      "epss": 0.98616,
+      "relevanceScore": 56,
+      "relevanceClass": "Medium",
+      "scoreBreakdown": {
+        "score": 56,
+        "classification": "Medium",
+        "factors": [
+          {
+            "factor": "Active Exploitation",
+            "points": 18,
+            "reason": "Confirmed"
+          },
+          {
+            "factor": "Threat Severity",
+            "points": 12,
+            "reason": "Critical"
+          },
+          {
+            "factor": "CISA KEV",
+            "points": 12,
+            "reason": "Listed"
+          },
+          {
+            "factor": "Exploit Availability",
+            "points": 7,
+            "reason": "Public"
+          },
+          {
+            "factor": "EPSS",
+            "points": 5,
+            "reason": "98.6%"
+          },
+          {
+            "factor": "Source Confidence",
+            "points": 1,
+            "reason": "1 source(s)"
+          },
+          {
+            "factor": "Recency",
+            "points": 1,
+            "reason": "28d"
+          }
+        ]
+      }
+    }
+  ]
+}
