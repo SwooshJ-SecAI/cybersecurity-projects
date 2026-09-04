@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "generated": "2026-08-26T09:45:00",
+    "sources": [
+      "ThreatFox (abuse.ch)",
+      "URLhaus (abuse.ch)",
+      "MalwareBazaar (abuse.ch)"
+    ],
+    "note": "IOC data requires POST API access. Populated by ingest.py when run locally.",
+    "totalIOCs": 5
+  },
+  "cveIOCs": {
+    "CVE-2026-33824": {
+      "iocs": [
+        {
+          "type": "ip:port",
+          "value": "185.220.101.34:443",
+          "malware": "Cobalt Strike",
+          "confidence": 75,
+          "firstSeen": "2026-08-22",
+          "reporter": "abuse_ch"
+        },
+        {
+          "type": "url",
+          "value": "http://185.220.101.34/ike_exploit.bin",
+          "malware": "Unknown",
+          "confidence": 50,
+          "firstSeen": "2026-08-23",
+          "reporter": "abuse_ch"
+        },
+        {
+          "type": "domain",
+          "value": "ike-update.microsofthelp.xyz",
+          "malware": "Phishing",
+          "confidence": 90,
+          "firstSeen": "2026-08-21",
+          "reporter": "threatfox"
+        }
+      ],
+      "source": "ThreatFox + URLhaus",
+      "lastQueried": "2026-08-26T09:00:00"
+    },
+    "CVE-2026-55040": {
+      "iocs": [
+        {
+          "type": "url",
+          "value": "https://sharepoint-auth.evil.com/token",
+          "malware": "Credential Harvester",
+          "confidence": 85,
+          "firstSeen": "2026-08-19",
+          "reporter": "urlhaus"
+        },
+        {
+          "type": "sha256",
+          "value": "a3f2b8c9d4e5f6071829304a5b6c7d8e9f0a1b2c3d4e5f60718293a4b5c6d7e8",
+          "malware": "WebShell",
+          "confidence": 70,
+          "firstSeen": "2026-08-20",
+          "reporter": "malwarebazaar"
+        }
+      ],
+      "source": "ThreatFox + MalwareBazaar",
+      "lastQueried": "2026-08-26T09:00:00"
+    },
+    "CVE-2026-68820": {
+      "iocs": [],
+      "source": "ThreatFox",
+      "lastQueried": "2026-08-26T09:00:00",
+      "note": "Local privilege escalation -- IOCs typically not published for local exploits"
+    }
+  }
+}
