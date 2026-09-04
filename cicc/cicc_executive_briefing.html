@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example Corp | CICC Executive Briefing | August 29, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+/* ===== DESIGN TOKENS ===== */
+:root {
+  --bg: #0E553F;
+  --bg-secondary: #0A3D2E;
+  --accent: #FEAD77;
+  --accent-dim: rgba(254, 173, 119, 0.15);
+  --accent-border: rgba(254, 173, 119, 0.3);
+  --accent-glow: rgba(254, 173, 119, 0.08);
+  --accent-gradient: linear-gradient(135deg, #E87722, #FEAD77);
+  --text-primary: #FFFFFF;
+  --text-secondary: #D9D8D6;
+  --text-muted: #76777A;
+  --border: rgba(255,255,255,0.1);
+  --border-light: rgba(255,255,255,0.15);
+  --red: #BE4D00;
+  --red-dim: rgba(190, 77, 0, 0.15);
+  --red-border: rgba(190, 77, 0, 0.4);
+  --orange: #E87722;
+  --orange-dim: rgba(232, 119, 34, 0.15);
+  --green: #85D09A;
+  --green-dim: rgba(133, 208, 154, 0.15);
+  --yellow: #E87722;
+  --yellow-dim: rgba(232, 119, 34, 0.15);
+  --purple: #E87722;
+  --purple-dim: rgba(155, 203, 235, 0.15);
+  --radius: 8px;
+  --radius-sm: 4px;
+  --radius-lg: 12px;
+  --font-body: 'Lato', 'Segoe UI', system-ui, sans-serif;
+  --font-heading: 'Lato', 'Segoe UI', system-ui, sans-serif;
+  --content-width: 920px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== DECK CONTAINER ===== */
+.deck {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== SLIDE BASE ===== */
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 64px 80px 60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  background: var(--bg);
+}
+.slide.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.slide.hero {
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+.slide-content {
+  width: 100%;
+  max-width: var(--content-width);
+}
+
+/* ===== TYPOGRAPHY ===== */
+.slide h2 {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--accent);
+  margin-bottom: 24px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.slide.hero h2 {
+  font-size: 2.2rem;
+  color: var(--accent);
+}
+.slide h3 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 20px 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.slide h4 {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+/* ===== CLASSIFICATION BANNER ===== */
+.classification {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== CHAPTER HEADER ===== */
+.chapter-num {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.15;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.chapter-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+/* ===== DATA TABLE ===== */
+.data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.8rem;
+  margin: 16px 0;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.data-table th {
+  text-align: left;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--border-light);
+}
+.data-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  color: var(--text-primary);
+  font-size: 0.82rem;
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table .field {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ===== BADGES ===== */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.badge.critical { background: var(--red-dim); color: var(--red); border: 1px solid var(--red-border); }
+.badge.high { background: var(--orange-dim); color: var(--orange); border: 1px solid rgba(232,119,34,0.4); }
+.badge.medium { background: var(--yellow-dim); color: var(--yellow); border: 1px solid rgba(232,119,34,0.3); }
+.badge.good { background: var(--green-dim); color: var(--green); border: 1px solid rgba(133,208,154,0.3); }
+.badge.info { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-border); }
+.badge.new { background: var(--purple-dim); color: var(--purple); border: 1px solid rgba(155,203,235,0.3); }
+
+/* ===== CARD GRID ===== */
+.card-grid {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+.card:hover {
+  border-color: var(--accent-border);
+}
+.card-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin: 0 auto 8px;
+}
+.card-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ===== KPI CARDS ===== */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+.kpi-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 14px 12px;
+  text-align: center;
+}
+.kpi-value {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+}
+.kpi-value.warn { color: var(--orange); }
+.kpi-value.alert { color: var(--red); }
+.kpi-value.ok { color: var(--green); }
+.kpi-label {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  line-height: 1.3;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.kpi-target {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ===== STAT ROW ===== */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+.stat-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 14px;
+  text-align: center;
+}
+.stat-big {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ===== FLOW ROW ===== */
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 16px 0;
+}
+.flow-card {
+  flex: 1;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 10px 8px;
+  text-align: center;
+}
+.flow-card h4 {
+  margin: 4px 0 2px;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+.flow-card p {
+  margin: 0;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+.flow-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  color: var(--bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+.flow-arrow {
+  color: var(--accent);
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+/* ===== CALLOUT ===== */
+.callout {
+  background: var(--red-dim);
+  border: 1px solid var(--red-border);
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  font-size: 0.78rem;
+  color: var(--text-primary);
+  margin: 12px 0;
+}
+.callout strong { color: var(--red); }
+.callout.info-callout {
+  background: var(--accent-dim);
+  border-color: var(--accent-border);
+}
+.callout.info-callout strong { color: var(--accent); }
+
+/* ===== DEFINITION BLOCK ===== */
+.definition {
+  border-left: 3px solid var(--accent);
+  padding: 14px 20px;
+  background: var(--accent-dim);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 14px 0;
+  color: var(--text-primary);
+}
+.definition p { margin: 0; }
+
+/* ===== NOT-LIST ===== */
+.not-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.not-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-family: var(--font-heading);
+}
+.not-item::before {
+  content: "X ";
+  color: var(--red);
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+/* ===== HORIZON TIMELINE ===== */
+.horizon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+.horizon-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 16px;
+  border-top: 3px solid var(--accent);
+}
+.horizon-card.urgent { border-top-color: var(--red); }
+.horizon-card.short { border-top-color: var(--orange); }
+.horizon-card.medium { border-top-color: var(--green); }
+.horizon-label {
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.horizon-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.horizon-card ul li {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  padding: 3px 0;
+  padding-left: 14px;
+  position: relative;
+}
+.horizon-card ul li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* ===== DECISION CARDS ===== */
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+.decision-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  border-left: 3px solid var(--accent);
+}
+.decision-num {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.decision-title {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.decision-desc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ===== SOURCE CATEGORIES ===== */
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 14px 0;
+}
+.source-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 14px 12px;
+  text-align: center;
+}
+.source-ratio {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.source-name {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ===== SCORING BAR ===== */
+.score-bar-container {
+  margin: 12px 0;
+}
+.score-bar {
+  display: flex;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin: 8px 0;
+  border: 1px solid var(--border-light);
+}
+.score-segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.55rem;
+  color: var(--bg);
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.02em;
+}
+.score-legend {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px 12px;
+  margin-top: 10px;
+}
+.score-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+}
+.score-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ===== WORKED EXAMPLE ===== */
+.worked-example {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin: 12px 0;
+}
+.worked-title {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.worked-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+  font-size: 0.75rem;
+}
+.worked-factor { color: var(--text-secondary); }
+.worked-value {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.worked-total {
+  border-top: 1px solid var(--border-light);
+  margin-top: 6px;
+  padding-top: 6px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* ===== SECTION LABEL ===== */
+.section-label {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+/* ===== NAVIGATION CHROME ===== */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent-gradient);
+  transition: width 0.3s ease;
+  z-index: 100;
+}
+.slide-num {
+  position: fixed;
+  bottom: 20px;
+  left: 24px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  z-index: 100;
+}
+.nav-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+  display: flex;
+  gap: 8px;
+  z-index: 100;
+}
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+.nav-btn:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent-border);
+}
+.nav-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 2;
+}
+
+/* ===== SPEAKER NOTES PANEL ===== */
+.notes-panel {
+  position: fixed;
+  top: 0;
+  right: -380px;
+  width: 380px;
+  height: 100vh;
+  background: #062D20;
+  color: var(--text-secondary);
+  padding: 32px 24px;
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.6);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  border-left: 1px solid var(--border-light);
+}
+.notes-panel.open { right: 0; }
+.notes-panel h3 {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.notes-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  transition: background 0.2s, border-color 0.2s;
+}
+.notes-toggle:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent-border);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  :root { --content-width: 95%; }
+  .slide { padding: 48px 24px 50px; }
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .horizon-grid, .decision-grid, .source-grid { grid-template-columns: 1fr; }
+  .score-legend { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- ===== SLIDE 1: TITLE/COVER ===== -->
+  <section class="slide hero visible" data-slide="1" data-notes="This briefing covers our external cyber intelligence posture -- what is happening in the threat landscape and whether it has a meaningful relationship to technology we use. This is not a SIEM or vulnerability scanner review. This is external intelligence correlation.">
+    <div class="slide-content">
+      <div class="section-label" style="letter-spacing:0.15em; font-weight:300;">Example Corp -- Executive Intelligence Briefing</div>
+      <h2 style="font-size:2.4rem; margin-bottom:12px;">Cyber Intelligence Command Center</h2>
+      <p style="font-size:1.05rem; color:var(--text-secondary); margin-bottom:8px; font-family:var(--font-body);">External Cyber Situational Awareness &amp; Technology Relevance Platform</p>
+      <div class="classification">Example Corp | Executive Intelligence Briefing | August 29, 2026 | Classification: Internal Use Only</div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 2: AGENDA ===== -->
+  <section class="slide" data-slide="2" data-notes="Six areas. I will spend the most time on items 3 and 4 -- what directly affects us and the metrics we are tracking.">
+    <div class="slide-content">
+      <h2>Briefing Agenda</h2>
+      <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="card">
+          <div class="card-num">1</div>
+          <div class="card-label">Mission &amp; Scope</div>
+        </div>
+        <div class="card">
+          <div class="card-num">2</div>
+          <div class="card-label">Current Threat Posture</div>
+        </div>
+        <div class="card">
+          <div class="card-num">3</div>
+          <div class="card-label">Direct Technology Impact</div>
+        </div>
+        <div class="card">
+          <div class="card-num">4</div>
+          <div class="card-label">Key Performance Indicators</div>
+        </div>
+        <div class="card">
+          <div class="card-num">5</div>
+          <div class="card-label">Intelligence Architecture</div>
+        </div>
+        <div class="card">
+          <div class="card-num">6</div>
+          <div class="card-label">Strategic Recommendations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 3: CHAPTER HEADER - MISSION & SCOPE ===== -->
+  <section class="slide hero" data-slide="3" data-notes="This platform is not competing with any existing security tool. Our SIEM processes internal logs. Our EDR monitors endpoints. CICC sits upstream -- it watches the external world and tells us when something out there is relevant to something in here.">
+    <div class="slide-content">
+      <div class="chapter-num">01</div>
+      <div class="chapter-title">MISSION &amp; SCOPE</div>
+      <div class="definition" style="text-align:left; margin-top:24px;">
+        <p>What is happening in the external cyber landscape, and does it have a meaningful relationship to technology we use?</p>
+      </div>
+      <div class="not-list" style="justify-content:center; margin-top:20px;">
+        <div class="not-item">SIEM</div>
+        <div class="not-item">EDR</div>
+        <div class="not-item">Vulnerability Scanner</div>
+        <div class="not-item">SOAR</div>
+      </div>
+      <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:14px; font-family:var(--font-body);">External intelligence correlation. Not internal telemetry.</p>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 4: CURRENT THREAT POSTURE ===== -->
+  <section class="slide" data-slide="4" data-notes="CISA added 29 vulnerabilities confirmed exploited in the wild. Of those 29, four directly affect our stack -- a 14% direct hit rate.">
+    <div class="slide-content">
+      <h2>Current Threat Posture</h2>
+      <div class="stat-row">
+        <div class="stat-card">
+          <div class="stat-big" style="color:var(--red);">ELEVATED</div>
+          <div class="stat-label">Global Threat Level</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-big" style="color:var(--accent);">29</div>
+          <div class="stat-label">CISA KEV (30-Day)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-big" style="color:var(--red);">4</div>
+          <div class="stat-label">DIRECT Matches</div>
+        </div>
+      </div>
+      <div class="stat-row" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="stat-card">
+          <div class="stat-big" style="color:var(--accent); font-size:1.4rem;">124</div>
+          <div class="stat-label">RSS Articles</div>
+          <div class="kpi-target">5 sources</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-big" style="color:var(--accent); font-size:1.4rem;">140</div>
+          <div class="stat-label">Total CIEs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-big" style="color:var(--orange); font-size:1.4rem;">8.9</div>
+          <div class="stat-label">Avg CVSS</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-big" style="color:var(--red); font-size:1.4rem;">+6</div>
+          <div class="stat-label">New KEVs Since Last</div>
+        </div>
+      </div>
+      <div class="callout info-callout">
+        <strong>Update:</strong> 6 new KEV entries since last assessment. 1 new DIRECT match: SQL Server (CVE-2019-1068).
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 5: DIRECT TECHNOLOGY IMPACT ===== -->
+  <section class="slide" data-slide="5" data-notes="This is the slide that matters most. The IKE vulnerability scores 94/100 on our relevance scale. SharePoint EPSS jumped 7x in one week -- exploitation is accelerating. SQL Server is new as of August 26.">
+    <div class="slide-content">
+      <h2>Direct Technology Impact</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>CVE</th>
+            <th>Technology</th>
+            <th>CVSS</th>
+            <th>EPSS</th>
+            <th>Score</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="field">CVE-2026-33824</td>
+            <td>Microsoft IKE</td>
+            <td>9.8</td>
+            <td>72.7%</td>
+            <td style="font-family:var(--font-heading); font-weight:700; color:var(--red);">94</td>
+            <td><span class="badge critical">CRITICAL</span></td>
+          </tr>
+          <tr>
+            <td class="field">CVE-2026-55040</td>
+            <td>SharePoint</td>
+            <td>9.1</td>
+            <td>39.7%</td>
+            <td style="font-family:var(--font-heading); font-weight:700; color:var(--orange);">86</td>
+            <td><span class="badge high">HIGH</span></td>
+          </tr>
+          <tr>
+            <td class="field">CVE-2019-1068</td>
+            <td>SQL Server</td>
+            <td>8.8</td>
+            <td>52.8%</td>
+            <td style="font-family:var(--font-heading); font-weight:700; color:var(--orange);">85</td>
+            <td><span class="badge high">HIGH</span> <span class="badge new">NEW</span></td>
+          </tr>
+          <tr>
+            <td class="field">CVE-2026-68820</td>
+            <td>WinSock</td>
+            <td>7.0</td>
+            <td>6.2%</td>
+            <td style="font-family:var(--font-heading); font-weight:700; color:var(--orange);">79</td>
+            <td><span class="badge high">HIGH</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <strong>EPSS Acceleration Warning:</strong> SharePoint (CVE-2026-55040) EPSS jumped from 5.6% to 39.7% in 7 days. 7x increase indicates active exploitation ramp-up. Prioritize for immediate triage.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 6: KEY PERFORMANCE INDICATORS ===== -->
+  <section class="slide" data-slide="6" data-notes="Two that need attention: source coverage at 25% means visibility gaps. Four unresolved direct matches need triage. Target 100% source coverage in 90 days and zero unresolved DIRECT matches older than 72 hours.">
+    <div class="slide-content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-value alert">4</div>
+          <div class="kpi-label">Direct Tech Matches</div>
+          <div class="kpi-target">Target: 0 unresolved</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value ok">&lt;24h</div>
+          <div class="kpi-label">Mean Time to Surface</div>
+          <div class="kpi-target">Within SLA</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value ok">4/4</div>
+          <div class="kpi-label">CISA KEV Compliance</div>
+          <div class="kpi-target">0 past due</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value warn">1</div>
+          <div class="kpi-label">EPSS Accel. Alerts</div>
+          <div class="kpi-target">SharePoint active</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value warn">25%</div>
+          <div class="kpi-label">Source Coverage</div>
+          <div class="kpi-target">8 of 32 sources</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value alert">1C + 3H</div>
+          <div class="kpi-label">Unresolved Direct</div>
+          <div class="kpi-target">1 Critical, 3 High</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value" style="color:var(--accent);">6.5%</div>
+          <div class="kpi-label">Corroboration Rate</div>
+          <div class="kpi-target">9 of 140 CIEs</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value" style="color:var(--accent);">1/3/25</div>
+          <div class="kpi-label">Score Distribution</div>
+          <div class="kpi-target">Crit / High / Med</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 7: INTELLIGENCE ARCHITECTURE ===== -->
+  
+  <!-- ===== ANALYTICAL: CVSS SEVERITY DISTRIBUTION ===== -->
+  <section class="slide" data-slide="7" data-notes="This chart shows the CVSS severity distribution across all 29 KEV entries in our 30-day window. 15 are Critical (9.0+), 10 are High, 2 Medium, and 2 have no NVD score yet. The average CVSS is 8.9 -- an unusually high concentration of severe vulnerabilities. This tells us the current threat window is dominated by high-impact exploitation.">
+    <div style="width:var(--content-width);text-align:left;">
+      <div style="font-size:11px;color:var(--accent);letter-spacing:0.15em;font-weight:700;margin-bottom:4px;">ANALYTICAL REVIEW</div>
+      <h2 style="font-size:28px;font-weight:300;color:var(--text-primary);margin:0 0 6px 0;">CVSS Severity Distribution</h2>
+      <div style="font-size:13px;color:var(--text-muted);margin-bottom:32px;">29 CISA KEV Entries -- 30-Day Window | Average CVSS: 8.9</div>
+
+      <div style="display:flex;gap:40px;align-items:flex-start;">
+        <!-- Bar Chart -->
+        <div style="flex:1;">
+          <svg viewBox="0 0 500 280" style="width:100%;max-width:500px;">
+            <!-- Grid lines -->
+            <line x1="120" y1="20" x2="480" y2="20" stroke="rgba(255,255,255,0.05)" />
+            <line x1="120" y1="70" x2="480" y2="70" stroke="rgba(255,255,255,0.05)" />
+            <line x1="120" y1="120" x2="480" y2="120" stroke="rgba(255,255,255,0.05)" />
+            <line x1="120" y1="170" x2="480" y2="170" stroke="rgba(255,255,255,0.05)" />
+            <line x1="120" y1="220" x2="480" y2="220" stroke="rgba(255,255,255,0.05)" />
+
+            <!-- Critical bar -->
+            <text x="115" y="35" fill="#D9D8D6" font-size="11" text-anchor="end" font-family="Lato,sans-serif">Critical (9.0+)</text>
+            <rect x="120" y="14" width="340" height="30" rx="3" fill="#BE4D00" />
+            <text x="468" y="35" fill="#FEAD77" font-size="13" font-weight="700" font-family="Lato,sans-serif">15</text>
+
+            <!-- High bar -->
+            <text x="115" y="85" fill="#D9D8D6" font-size="11" text-anchor="end" font-family="Lato,sans-serif">High (7.0-8.9)</text>
+            <rect x="120" y="64" width="226" height="30" rx="3" fill="#E87722" />
+            <text x="354" y="85" fill="#FEAD77" font-size="13" font-weight="700" font-family="Lato,sans-serif">10</text>
+
+            <!-- Medium bar -->
+            <text x="115" y="135" fill="#D9D8D6" font-size="11" text-anchor="end" font-family="Lato,sans-serif">Medium (4.0-6.9)</text>
+            <rect x="120" y="114" width="45" height="30" rx="3" fill="#FEAD77" />
+            <text x="173" y="135" fill="#FEAD77" font-size="13" font-weight="700" font-family="Lato,sans-serif">2</text>
+
+            <!-- N/A bar -->
+            <text x="115" y="185" fill="#D9D8D6" font-size="11" text-anchor="end" font-family="Lato,sans-serif">No Score</text>
+            <rect x="120" y="164" width="45" height="30" rx="3" fill="#76777A" />
+            <text x="173" y="185" fill="#76777A" font-size="13" font-weight="700" font-family="Lato,sans-serif">2</text>
+
+            <!-- Axis -->
+            <line x1="120" y1="5" x2="120" y2="200" stroke="rgba(255,255,255,0.15)" />
+          </svg>
+        </div>
+
+        <!-- Key Insight Panel -->
+        <div style="width:300px;background:var(--bg-secondary);border-radius:8px;padding:24px;border-left:3px solid var(--accent);">
+          <div style="font-size:10px;letter-spacing:0.12em;color:var(--accent);font-weight:700;margin-bottom:12px;">KEY INSIGHT</div>
+          <div style="font-size:36px;font-weight:700;color:var(--red);margin-bottom:4px;">86%</div>
+          <div style="font-size:12px;color:var(--text-secondary);margin-bottom:16px;">of KEV entries are Critical or High severity</div>
+          <div style="font-size:11px;color:var(--text-muted);line-height:1.6;">
+            The 30-day window is dominated by high-impact exploitation. 25 of 29 entries carry CVSS scores of 7.0 or above. This concentration is abnormally high and indicates an elevated threat period.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANALYTICAL: EPSS vs CVSS SCATTER ===== -->
+  <section class="slide" data-slide="8" data-notes="This scatter plot maps CVSS severity against EPSS exploitation probability for all 29 KEV entries. The upper-right quadrant represents the highest risk -- high severity AND high exploitation probability. Our four DIRECT matches are highlighted in orange. Notice Microsoft IKE sits in the danger zone with both high CVSS (9.8) and high EPSS (72.7%). The SharePoint dot has moved significantly rightward since last week as its EPSS climbed from 5.6% to 39.7%.">
+    <div style="width:var(--content-width);text-align:left;">
+      <div style="font-size:11px;color:var(--accent);letter-spacing:0.15em;font-weight:700;margin-bottom:4px;">ANALYTICAL REVIEW</div>
+      <h2 style="font-size:28px;font-weight:300;color:var(--text-primary);margin:0 0 6px 0;">EPSS vs CVSS Risk Matrix</h2>
+      <div style="font-size:13px;color:var(--text-muted);margin-bottom:24px;">Exploitation Probability vs Severity | DIRECT matches highlighted</div>
+
+      <div style="display:flex;gap:32px;align-items:flex-start;">
+        <div style="flex:1;">
+          <svg viewBox="0 0 500 280" style="width:100%;max-width:520px;">
+            <!-- Quadrant shading -->
+            <rect x="290" y="5" width="190" height="120" fill="rgba(190,77,0,0.08)" rx="4"/>
+            <text x="385" y="18" fill="rgba(190,77,0,0.4)" font-size="8" text-anchor="middle" font-family="Lato,sans-serif">HIGH RISK ZONE</text>
+
+            <!-- Grid -->
+            <line x1="120" y1="20" x2="480" y2="20" stroke="rgba(255,255,255,0.05)" />
+            <line x1="120" y1="130" x2="480" y2="130" stroke="rgba(255,255,255,0.05)" />
+            <line x1="120" y1="240" x2="480" y2="240" stroke="rgba(255,255,255,0.1)" />
+            <line x1="120" y1="5" x2="120" y2="250" stroke="rgba(255,255,255,0.1)" />
+            <line x1="290" y1="5" x2="290" y2="250" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4,4"/>
+
+            <!-- Y-axis labels -->
+            <text x="115" y="24" fill="#76777A" font-size="9" text-anchor="end" font-family="Lato,sans-serif">10.0</text>
+            <text x="115" y="134" fill="#76777A" font-size="9" text-anchor="end" font-family="Lato,sans-serif">5.0</text>
+            <text x="115" y="244" fill="#76777A" font-size="9" text-anchor="end" font-family="Lato,sans-serif">0</text>
+            <text x="50" y="130" fill="#76777A" font-size="9" text-anchor="middle" transform="rotate(-90,50,130)" font-family="Lato,sans-serif">CVSS Score</text>
+
+            <!-- X-axis labels -->
+            <text x="120" y="260" fill="#76777A" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">0%</text>
+            <text x="290" y="260" fill="#76777A" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">50%</text>
+            <text x="460" y="260" fill="#76777A" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">100%</text>
+            <text x="290" y="275" fill="#76777A" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">EPSS Exploitation Probability</text>
+
+            <!-- Data points -->
+            <circle cx="367" cy="24" r="7" fill="#BE4D00" opacity="0.85"/>
+            <text x="367" y="12" fill="#FEAD77" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">Microsoft IKE</text>
+            <text x="367" y="21" fill="#D9D8D6" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">72.7%</text>
+            <circle cx="255" cy="40" r="7" fill="#BE4D00" opacity="0.85"/>
+            <text x="255" y="28" fill="#FEAD77" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">SharePoint</text>
+            <text x="255" y="37" fill="#D9D8D6" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">39.7%</text>
+            <circle cx="300" cy="46" r="7" fill="#BE4D00" opacity="0.85"/>
+            <text x="300" y="34" fill="#FEAD77" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">SQL Server</text>
+            <text x="300" y="43" fill="#D9D8D6" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">52.8%</text>
+            <circle cx="141" cy="86" r="7" fill="#BE4D00" opacity="0.85"/>
+            <text x="141" y="74" fill="#FEAD77" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">WinSock</text>
+            <text x="141" y="83" fill="#D9D8D6" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">6.2%</text>
+            <circle cx="263" cy="20" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="389" cy="20" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="267" cy="24" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="418" cy="24" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="459" cy="29" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="276" cy="24" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="126" cy="31" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="154" cy="24" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="408" cy="24" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="176" cy="35" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="177" cy="33" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="238" cy="24" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="125" cy="46" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="190" cy="44" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="257" cy="60" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="304" cy="60" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="404" cy="62" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="122" cy="68" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="122" cy="123" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="137" cy="68" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="152" cy="68" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="150" cy="128" r="4" fill="#76777A" opacity="0.85"/>
+            <circle cx="125" cy="35" r="4" fill="#76777A" opacity="0.85"/>
+
+            <!-- Legend -->
+            <circle cx="130" cy="275" r="5" fill="#BE4D00"/>
+            <text x="140" y="278" fill="#D9D8D6" font-size="8" font-family="Lato,sans-serif">DIRECT Match</text>
+            <circle cx="230" cy="275" r="3" fill="#76777A"/>
+            <text x="238" y="278" fill="#D9D8D6" font-size="8" font-family="Lato,sans-serif">Other KEV</text>
+          </svg>
+        </div>
+
+        <div style="width:280px;background:var(--bg-secondary);border-radius:8px;padding:24px;border-left:3px solid var(--red);">
+          <div style="font-size:10px;letter-spacing:0.12em;color:var(--red);font-weight:700;margin-bottom:12px;">EPSS ACCELERATION</div>
+          <div style="font-size:11px;color:var(--text-secondary);line-height:1.8;">
+            <div style="margin-bottom:8px;"><span style="color:var(--red);font-weight:700;">CVE-2026-55040</span> (SharePoint)</div>
+            <div>Last week: <span style="color:var(--text-muted);">5.6%</span></div>
+            <div>This week: <span style="color:var(--red);font-weight:700;">39.7%</span></div>
+            <div style="margin-top:8px;font-size:24px;font-weight:700;color:var(--red);">7x increase</div>
+            <div style="margin-top:12px;font-size:10px;color:var(--text-muted);line-height:1.5;">Exploitation probability is accelerating. This CVE should be prioritized for immediate patching regardless of CVSS score.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANALYTICAL: RELEVANCE & COVERAGE ===== -->
+  <section class="slide" data-slide="9" data-notes="Left panel: Relevance score distribution shows 1 Critical event (94 -- Microsoft IKE), 3 High (79-86), and 25 Medium (56-69). The gap between our top 4 DIRECT matches and everything else is significant -- those 4 events account for all scores above 75. Right panel: Source coverage is our biggest operational gap. Only 8 of 32 planned sources are active. Attack Landscape is at 45% (5 of 11), Authoritative at 60% (3 of 5), but Threat Research and IOC Enrichment are at 0%. This means we have no visibility into threat actor TTPs or indicators of compromise from specialized feeds.">
+    <div style="width:var(--content-width);text-align:left;">
+      <div style="font-size:11px;color:var(--accent);letter-spacing:0.15em;font-weight:700;margin-bottom:4px;">ANALYTICAL REVIEW</div>
+      <h2 style="font-size:28px;font-weight:300;color:var(--text-primary);margin:0 0 6px 0;">Relevance Distribution & Source Coverage</h2>
+      <div style="font-size:13px;color:var(--text-muted);margin-bottom:28px;">Score classification across 29 KEV events | Intelligence source activation status</div>
+
+      <div style="display:flex;gap:32px;">
+        <!-- Relevance Score Histogram -->
+        <div style="flex:1;background:var(--bg-secondary);border-radius:8px;padding:24px;">
+          <div style="font-size:10px;letter-spacing:0.12em;color:var(--accent);font-weight:700;margin-bottom:16px;">RELEVANCE SCORE DISTRIBUTION</div>
+          <svg viewBox="0 0 400 220" style="width:100%;">
+            <!-- Y axis -->
+            <text x="25" y="15" fill="#76777A" font-size="8" text-anchor="end" font-family="Lato,sans-serif">25</text>
+            <line x1="30" y1="12" x2="380" y2="12" stroke="rgba(255,255,255,0.05)"/>
+            <text x="25" y="55" fill="#76777A" font-size="8" text-anchor="end" font-family="Lato,sans-serif">20</text>
+            <line x1="30" y1="52" x2="380" y2="52" stroke="rgba(255,255,255,0.05)"/>
+            <text x="25" y="95" fill="#76777A" font-size="8" text-anchor="end" font-family="Lato,sans-serif">15</text>
+            <line x1="30" y1="92" x2="380" y2="92" stroke="rgba(255,255,255,0.05)"/>
+            <text x="25" y="135" fill="#76777A" font-size="8" text-anchor="end" font-family="Lato,sans-serif">10</text>
+            <line x1="30" y1="132" x2="380" y2="132" stroke="rgba(255,255,255,0.05)"/>
+            <text x="25" y="175" fill="#76777A" font-size="8" text-anchor="end" font-family="Lato,sans-serif">5</text>
+            <line x1="30" y1="172" x2="380" y2="172" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="30" y1="212" x2="380" y2="212" stroke="rgba(255,255,255,0.1)"/>
+            
+            <!-- Bars: Critical=1, High=3, Medium=25, Low=0, Info=0 -->
+            <!-- Scale: max=25, each unit = 8px -->
+            <!-- Critical -->
+            <rect x="55" y="204" width="55" height="8" rx="2" fill="#BE4D00"/>
+            <text x="82" y="200" fill="#BE4D00" font-size="11" font-weight="700" text-anchor="middle" font-family="Lato,sans-serif">1</text>
+            <text x="82" y="218" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Critical</text>
+            
+            <!-- High -->
+            <rect x="130" y="188" width="55" height="24" rx="2" fill="#E87722"/>
+            <text x="157" y="184" fill="#E87722" font-size="11" font-weight="700" text-anchor="middle" font-family="Lato,sans-serif">3</text>
+            <text x="157" y="218" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">High</text>
+            
+            <!-- Medium -->
+            <rect x="205" y="12" width="55" height="200" rx="2" fill="#FEAD77"/>
+            <text x="232" y="8" fill="#FEAD77" font-size="11" font-weight="700" text-anchor="middle" font-family="Lato,sans-serif">25</text>
+            <text x="232" y="218" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Medium</text>
+            
+            <!-- Low -->
+            <rect x="280" y="212" width="55" height="0" rx="2" fill="#85D09A"/>
+            <text x="307" y="208" fill="#76777A" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">0</text>
+            <text x="307" y="218" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Low</text>
+            
+            <!-- Info -->
+            <rect x="355" y="212" width="25" height="0" rx="2" fill="#54565A"/>
+            <text x="367" y="208" fill="#76777A" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">0</text>
+            <text x="367" y="218" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Info</text>
+          </svg>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:8px;line-height:1.5;">4 DIRECT matches account for all scores above 75. The 25 Medium-scored events require monitoring but no immediate action.</div>
+        </div>
+
+        <!-- Source Coverage -->
+        <div style="width:340px;background:var(--bg-secondary);border-radius:8px;padding:24px;">
+          <div style="font-size:10px;letter-spacing:0.12em;color:var(--accent);font-weight:700;margin-bottom:16px;">SOURCE COVERAGE BY CATEGORY</div>
+          
+          <div style="margin-bottom:20px;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-size:11px;color:var(--text-secondary);">Attack Landscape</span>
+              <span style="font-size:11px;color:var(--accent);font-weight:700;">5 / 11</span>
+            </div>
+            <div style="height:8px;background:rgba(255,255,255,0.08);border-radius:4px;overflow:hidden;">
+              <div style="width:45%;height:100%;background:var(--accent);border-radius:4px;"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-size:11px;color:var(--text-secondary);">Threat Research</span>
+              <span style="font-size:11px;color:var(--red);font-weight:700;">0 / 10</span>
+            </div>
+            <div style="height:8px;background:rgba(255,255,255,0.08);border-radius:4px;overflow:hidden;">
+              <div style="width:0%;height:100%;background:var(--red);border-radius:4px;"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-size:11px;color:var(--text-secondary);">Authoritative Intel</span>
+              <span style="font-size:11px;color:var(--green);font-weight:700;">3 / 5</span>
+            </div>
+            <div style="height:8px;background:rgba(255,255,255,0.08);border-radius:4px;overflow:hidden;">
+              <div style="width:60%;height:100%;background:var(--green);border-radius:4px;"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-size:11px;color:var(--text-secondary);">IOC Enrichment</span>
+              <span style="font-size:11px;color:var(--red);font-weight:700;">0 / 6</span>
+            </div>
+            <div style="height:8px;background:rgba(255,255,255,0.08);border-radius:4px;overflow:hidden;">
+              <div style="width:0%;height:100%;background:var(--red);border-radius:4px;"></div>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:16px;margin-top:8px;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="font-size:12px;color:var(--text-primary);font-weight:700;">Overall</span>
+              <span style="font-size:12px;color:var(--red);font-weight:700;">8 / 32 (25%)</span>
+            </div>
+            <div style="height:10px;background:rgba(255,255,255,0.08);border-radius:5px;overflow:hidden;">
+              <div style="width:25%;height:100%;background:linear-gradient(90deg,var(--accent),var(--orange));border-radius:5px;"></div>
+            </div>
+            <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">Threat Research and IOC categories at 0% represent critical visibility gaps requiring immediate investment.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANALYTICAL: TIMELINE & VENDOR EXPOSURE ===== -->
+  <section class="slide" data-slide="10" data-notes="Left: The KEV addition timeline shows CISA added vulnerabilities in 3 distinct clusters -- August 3-7 (4 entries), August 11-21 (11 entries, the heaviest period), and August 24-27 (6 entries including 3 new this week). This clustering suggests coordinated disclosure cycles and should inform our monitoring cadence. Right: Vendor exposure heatmap shows Microsoft dominates with 4 DIRECT matches. The remaining 25 entries span 18 unique vendors with no other vendor having more than 2 entries. Our exposure is concentrated in the Microsoft ecosystem.">
+    <div style="width:var(--content-width);text-align:left;">
+      <div style="font-size:11px;color:var(--accent);letter-spacing:0.15em;font-weight:700;margin-bottom:4px;">ANALYTICAL REVIEW</div>
+      <h2 style="font-size:28px;font-weight:300;color:var(--text-primary);margin:0 0 6px 0;">KEV Timeline & Vendor Exposure</h2>
+      <div style="font-size:13px;color:var(--text-muted);margin-bottom:28px;">30-day CISA KEV addition timeline | Vendor distribution across all entries</div>
+
+      <div style="display:flex;gap:32px;">
+        <!-- Timeline -->
+        <div style="flex:1;background:var(--bg-secondary);border-radius:8px;padding:24px;">
+          <div style="font-size:10px;letter-spacing:0.12em;color:var(--accent);font-weight:700;margin-bottom:16px;">KEV ADDITIONS BY DATE</div>
+          <svg viewBox="0 0 420 200" style="width:100%;">
+            <!-- X axis -->
+            <line x1="20" y1="170" x2="400" y2="170" stroke="rgba(255,255,255,0.1)"/>
+            
+            <!-- Date bars (grouped by cluster) -->
+            <!-- Aug 3-4: IBM, N-able x2, Apache = 4 -->
+            <rect x="30" y="90" width="20" height="80" rx="2" fill="#FEAD77" opacity="0.7"/>
+            <text x="40" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 3-4</text>
+            <text x="40" y="86" fill="#FEAD77" font-size="9" font-weight="700" text-anchor="middle" font-family="Lato,sans-serif">4</text>
+            
+            <!-- Aug 5: JetBrains = 1 -->
+            <rect x="65" y="150" width="20" height="20" rx="2" fill="#FEAD77" opacity="0.5"/>
+            <text x="75" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 5</text>
+            <text x="75" y="146" fill="#FEAD77" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">1</text>
+            
+            <!-- Aug 7: Progress = 1 -->
+            <rect x="100" y="150" width="20" height="20" rx="2" fill="#FEAD77" opacity="0.5"/>
+            <text x="110" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 7</text>
+            <text x="110" y="146" fill="#FEAD77" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">1</text>
+            
+            <!-- Aug 11: MSFT WinSock, Cisco, Metabase = 3 -->
+            <rect x="140" y="110" width="20" height="60" rx="2" fill="#BE4D00"/>
+            <text x="150" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 11</text>
+            <text x="150" y="106" fill="#BE4D00" font-size="9" font-weight="700" text-anchor="middle" font-family="Lato,sans-serif">3</text>
+            
+            <!-- Aug 17: Ray = 1 -->
+            <rect x="175" y="150" width="20" height="20" rx="2" fill="#FEAD77" opacity="0.5"/>
+            <text x="185" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 17</text>
+            
+            <!-- Aug 18: MSFT IKE, MSFT SP, VMware, Apple, MLflow = 5 -->
+            <rect x="210" y="70" width="20" height="100" rx="2" fill="#BE4D00"/>
+            <text x="220" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 18</text>
+            <text x="220" y="66" fill="#BE4D00" font-size="9" font-weight="700" text-anchor="middle" font-family="Lato,sans-serif">5</text>
+            
+            <!-- Aug 19-21: Zimbra, TrueConf x2 = 3 -->
+            <rect x="245" y="110" width="20" height="60" rx="2" fill="#FEAD77" opacity="0.7"/>
+            <text x="255" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 19-21</text>
+            <text x="255" y="106" fill="#FEAD77" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">3</text>
+            
+            <!-- Aug 24: Oracle = 1 -->
+            <rect x="285" y="150" width="20" height="20" rx="2" fill="#FEAD77" opacity="0.5"/>
+            <text x="295" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 24</text>
+            
+            <!-- Aug 25: Gitea = 1 -->
+            <rect x="320" y="150" width="20" height="20" rx="2" fill="#FEAD77" opacity="0.5"/>
+            <text x="330" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 25</text>
+            
+            <!-- Aug 26: MSFT SQL, Citrix, RedHat x2, Linux, Ajax = 6 -->
+            <rect x="355" y="50" width="20" height="120" rx="2" fill="#BE4D00"/>
+            <text x="365" y="185" fill="#76777A" font-size="7" text-anchor="middle" font-family="Lato,sans-serif">Aug 26</text>
+            <text x="365" y="46" fill="#BE4D00" font-size="9" font-weight="700" text-anchor="middle" font-family="Lato,sans-serif">6</text>
+            
+            <!-- Aug 27: ownCloud, Linux, JFrog = 3 -->
+            <rect x="385" y="110" width="15" height="60" rx="2" fill="#E87722"/>
+            <text x="392" y="185" fill="#76777A" font-size="6" text-anchor="middle" font-family="Lato,sans-serif">Aug 27</text>
+            <text x="392" y="106" fill="#E87722" font-size="9" text-anchor="middle" font-family="Lato,sans-serif">3</text>
+          </svg>
+          <div style="display:flex;gap:16px;margin-top:4px;">
+            <div style="display:flex;align-items:center;gap:4px;"><div style="width:10px;height:10px;background:#BE4D00;border-radius:2px;"></div><span style="font-size:9px;color:var(--text-muted);">Includes DIRECT match</span></div>
+            <div style="display:flex;align-items:center;gap:4px;"><div style="width:10px;height:10px;background:#FEAD77;border-radius:2px;"></div><span style="font-size:9px;color:var(--text-muted);">No DIRECT match</span></div>
+          </div>
+        </div>
+
+        <!-- Vendor Heatmap -->
+        <div style="width:320px;background:var(--bg-secondary);border-radius:8px;padding:24px;">
+          <div style="font-size:10px;letter-spacing:0.12em;color:var(--accent);font-weight:700;margin-bottom:16px;">VENDOR EXPOSURE MAP</div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="display:flex;align-items:center;gap:8px;"><div style="width:180px;height:18px;background:#BE4D00;border-radius:3px;display:flex;align-items:center;padding:0 8px;"><span style="font-size:9px;color:white;font-weight:700;">Microsoft</span></div><span style="font-size:10px;color:#BE4D00;font-weight:700;">4 DIRECT</span></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div style="width:90px;height:18px;background:#E87722;border-radius:3px;display:flex;align-items:center;padding:0 8px;"><span style="font-size:9px;color:white;">N-able</span></div><span style="font-size:10px;color:var(--text-muted);">2</span></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div style="width:90px;height:18px;background:#E87722;border-radius:3px;display:flex;align-items:center;padding:0 8px;"><span style="font-size:9px;color:white;">TrueConf</span></div><span style="font-size:10px;color:var(--text-muted);">2</span></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div style="width:90px;height:18px;background:#E87722;border-radius:3px;display:flex;align-items:center;padding:0 8px;"><span style="font-size:9px;color:white;">Linux</span></div><span style="font-size:10px;color:var(--text-muted);">2</span></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div style="width:90px;height:18px;background:#E87722;border-radius:3px;display:flex;align-items:center;padding:0 8px;"><span style="font-size:9px;color:white;">Red Hat</span></div><span style="font-size:10px;color:var(--text-muted);">2</span></div>
+            <div style="display:flex;align-items:center;gap:8px;"><div style="width:45px;height:18px;background:#76777A;border-radius:3px;"></div><span style="font-size:10px;color:var(--text-muted);">15 vendors with 1 entry each</span></div>
+          </div>
+          <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:12px;margin-top:16px;">
+            <div style="font-size:10px;color:var(--text-muted);line-height:1.5;">
+              <span style="font-weight:700;color:var(--text-secondary);">20 unique vendors</span> across 29 entries. Microsoft concentration (4/29 = 14%) aligns with our watchlist exposure. No other watchlist vendor appears in current KEV window.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="slide" data-slide="11" data-notes="Four intelligence source categories feed a seven-stage processing lifecycle. The scoring model weights technology match at 20%, active exploitation at 18%, and CISA KEV at 12% -- those three account for half the score.">
+    <div class="slide-content">
+      <h2>Intelligence Architecture</h2>
+      <h3>Source Model</h3>
+      <div class="source-grid">
+        <div class="source-card">
+          <div class="source-ratio">5/11</div>
+          <div class="source-name">Attack Landscape</div>
+        </div>
+        <div class="source-card">
+          <div class="source-ratio" style="color:var(--red);">0/10</div>
+          <div class="source-name">Threat Research</div>
+        </div>
+        <div class="source-card">
+          <div class="source-ratio">3/5</div>
+          <div class="source-name">Authoritative</div>
+        </div>
+        <div class="source-card">
+          <div class="source-ratio" style="color:var(--red);">0/6</div>
+          <div class="source-name">IOC Feeds</div>
+        </div>
+      </div>
+      <h3>Processing Lifecycle</h3>
+      <div class="flow-row">
+        <div class="flow-card"><div class="flow-num">1</div><h4>Detect</h4></div>
+        <div class="flow-arrow"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <div class="flow-card"><div class="flow-num">2</div><h4>Corroborate</h4></div>
+        <div class="flow-arrow"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <div class="flow-card"><div class="flow-num">3</div><h4>Validate</h4></div>
+        <div class="flow-arrow"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <div class="flow-card"><div class="flow-num">4</div><h4>Enrich</h4></div>
+        <div class="flow-arrow"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <div class="flow-card"><div class="flow-num">5</div><h4>Correlate</h4></div>
+        <div class="flow-arrow"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <div class="flow-card"><div class="flow-num">6</div><h4>Score</h4></div>
+        <div class="flow-arrow"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+        <div class="flow-card"><div class="flow-num">7</div><h4>Present</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 8: SCORING MODEL TRANSPARENCY ===== -->
+  <section class="slide" data-slide="12" data-notes="Every score is fully decomposable. If an analyst questions why an event scored 94, they can see each factor's contribution. This is critical for analyst trust and audit defense.">
+    <div class="slide-content">
+      <h2>Scoring Model Transparency</h2>
+      <h3>12 Weighted Factors</h3>
+      <div class="score-bar-container">
+        <div class="score-bar">
+          <div class="score-segment" style="width:20%; background:#FEAD77;">20%</div>
+          <div class="score-segment" style="width:18%; background:#BE4D00;">18%</div>
+          <div class="score-segment" style="width:12%; background:#E87722;">12%</div>
+          <div class="score-segment" style="width:12%; background:#E87722;">12%</div>
+          <div class="score-segment" style="width:8%; background:#85D09A;">8%</div>
+          <div class="score-segment" style="width:7%; background:#E87722;">7%</div>
+          <div class="score-segment" style="width:6%; background:#7A3D00;">6%</div>
+          <div class="score-segment" style="width:5%; background:#76777A;">5%</div>
+          <div class="score-segment" style="width:3%; background:#54565A;"></div>
+          <div class="score-segment" style="width:3%; background:#76777A;"></div>
+          <div class="score-segment" style="width:3%; background:#E87722;"></div>
+          <div class="score-segment" style="width:3%; background:#D9D8D6;"></div>
+        </div>
+        <div class="score-legend">
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#FEAD77;"></div>Technology Match 20%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#BE4D00;"></div>Active Exploitation 18%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#E87722;"></div>Threat Severity 12%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#E87722;"></div>CISA KEV 12%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#85D09A;"></div>CVSS 8%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#E87722;"></div>Exploit Availability 7%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#7A3D00;"></div>Product Criticality 6%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#76777A;"></div>EPSS 5%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#54565A;"></div>Industry 3%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#76777A;"></div>Source Confidence 3%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#E87722;"></div>Recency 3%</div>
+          <div class="score-legend-item"><div class="score-legend-dot" style="background:#D9D8D6;"></div>Attack Vector 3%</div>
+        </div>
+      </div>
+      <div class="worked-example">
+        <div class="worked-title">Worked Example: CVE-2026-33824</div>
+        <div class="worked-row"><span class="worked-factor">Technology Match (20%)</span><span class="worked-value">20.0 / 20</span></div>
+        <div class="worked-row"><span class="worked-factor">Active Exploitation (18%)</span><span class="worked-value">18.0 / 18</span></div>
+        <div class="worked-row"><span class="worked-factor">Threat Severity (12%)</span><span class="worked-value">12.0 / 12</span></div>
+        <div class="worked-row"><span class="worked-factor">CISA KEV (12%)</span><span class="worked-value">12.0 / 12</span></div>
+        <div class="worked-row"><span class="worked-factor">CVSS (8%)</span><span class="worked-value">8.0 / 8</span></div>
+        <div class="worked-row"><span class="worked-factor">Exploit Availability (7%)</span><span class="worked-value">7.0 / 7</span></div>
+        <div class="worked-row"><span class="worked-factor">Product Criticality (6%)</span><span class="worked-value">5.0 / 6</span></div>
+        <div class="worked-row"><span class="worked-factor">EPSS (5%)</span><span class="worked-value">5.0 / 5</span></div>
+        <div class="worked-row"><span class="worked-factor">Remaining 4 factors (12%)</span><span class="worked-value">7.0 / 12</span></div>
+        <div class="worked-row worked-total"><span class="worked-factor">TOTAL RELEVANCE SCORE</span><span class="worked-value" style="font-size:1rem; color:var(--red);">94 / 100</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 9: STRATEGIC RECOMMENDATIONS ===== -->
+  <section class="slide" data-slide="13" data-notes="SharePoint is the priority escalation because exploitation probability increased 7x. Within 30 days, expand source coverage and establish SLA. Medium-term, 90 days, full coverage and automation.">
+    <div class="slide-content">
+      <h2>Strategic Recommendations</h2>
+      <div class="horizon-grid">
+        <div class="horizon-card urgent">
+          <div class="horizon-label" style="color:var(--red);">Immediate // This Week</div>
+          <ul>
+            <li>Triage 4 DIRECT matches</li>
+            <li>Escalate SharePoint CVE</li>
+            <li>Validate SQL Server exposure</li>
+          </ul>
+        </div>
+        <div class="horizon-card short">
+          <div class="horizon-label" style="color:var(--orange);">Short-Term // 30 Days</div>
+          <ul>
+            <li>Expand sources 25% to 75%</li>
+            <li>Establish 72-hour triage SLA</li>
+            <li>Formalize technology watchlist</li>
+          </ul>
+        </div>
+        <div class="horizon-card medium">
+          <div class="horizon-label" style="color:var(--green);">Medium-Term // 90 Days</div>
+          <ul>
+            <li>100% source coverage</li>
+            <li>Automate ingestion pipeline</li>
+            <li>Analyst collaboration model</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout">
+        <strong>Priority Escalation:</strong> SharePoint (CVE-2026-55040) exploitation probability increased 7x in 7 days. Immediate triage required.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SLIDE 10: DECISION POINTS FOR LEADERSHIP ===== -->
+  <section class="slide" data-slide="14" data-notes="Three decisions required. Technology Watchlist needs formally approved asset inventory. Source expansion needs budget for commercial feeds. Recommend integrating CICC briefing into daily standup.">
+    <div class="slide-content">
+      <h2>Decision Points for Leadership</h2>
+      <div class="decision-grid">
+        <div class="decision-card">
+          <div class="decision-num">Decision 01</div>
+          <div class="decision-title">Approve Technology Watchlist Formalization</div>
+          <div class="decision-desc">Requires formally approved asset inventory to establish authoritative technology baseline for correlation matching.</div>
+        </div>
+        <div class="decision-card">
+          <div class="decision-num">Decision 02</div>
+          <div class="decision-title">Fund Source Expansion</div>
+          <div class="decision-desc">Budget allocation for Threat Research and IOC commercial feeds. Current coverage: 25%. Target: 100% within 90 days.</div>
+        </div>
+        <div class="decision-card">
+          <div class="decision-num">Decision 03</div>
+          <div class="decision-title">Establish CICC as Standard Morning Brief</div>
+          <div class="decision-desc">Integrate CICC intelligence briefing into daily operational standup cadence for security leadership.</div>
+        </div>
+      </div>
+      <div class="callout info-callout" style="margin-top:20px;">
+        <strong>Classification:</strong> Internal Use Only | Example Corp | CICC Executive Intelligence Briefing | August 29, 2026
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== NAVIGATION CHROME ===== -->
+<div class="progress-bar" id="progressBar"></div>
+<div class="slide-num" id="slideNum">1 / 14</div>
+<div class="nav-controls">
+  <button class="nav-btn" id="prevBtn">
+    <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+  </button>
+  <button class="nav-btn" id="nextBtn">
+    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </button>
+</div>
+<button class="notes-toggle" id="notesToggle">N</button>
+<div class="notes-panel" id="notesPanel">
+  <h3>Speaker Notes</h3>
+  <div id="notesContent"></div>
+</div>
+
+<script>
+(function() {
+  try {
+    var slides = document.querySelectorAll('[data-slide]');
+    var total = slides.length;
+    var current = 1;
+
+    var progressBar = document.getElementById('progressBar');
+    var slideNum = document.getElementById('slideNum');
+    var notesPanel = document.getElementById('notesPanel');
+    var notesContent = document.getElementById('notesContent');
+    var notesToggle = document.getElementById('notesToggle');
+    var prevBtn = document.getElementById('prevBtn');
+    var nextBtn = document.getElementById('nextBtn');
+
+    function showSlide(n) {
+      if (n < 1) n = 1;
+      if (n > total) n = total;
+      current = n;
+      for (var i = 0; i < slides.length; i++) {
+        if (parseInt(slides[i].getAttribute('data-slide')) === n) {
+          slides[i].classList.add('visible');
+        } else {
+          slides[i].classList.remove('visible');
+        }
+      }
+      if (progressBar) progressBar.style.width = ((n / total) * 100) + '%';
+      if (slideNum) slideNum.textContent = n + ' / ' + total;
+      if (notesContent) {
+        var activeSlide = document.querySelector('[data-slide="' + n + '"]');
+        var notes = activeSlide ? activeSlide.getAttribute('data-notes') : '';
+        notesContent.textContent = notes || '(No notes for this slide)';
+      }
+    }
+
+    function toggleNotes() {
+      if (notesPanel) notesPanel.classList.toggle('open');
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); showSlide(current + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); showSlide(current - 1); }
+      if (e.key === 'n' || e.key === 'N') { e.preventDefault(); toggleNotes(); }
+    });
+
+    if (prevBtn) prevBtn.addEventListener('click', function() { showSlide(current - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function() { showSlide(current + 1); });
+    if (notesToggle) notesToggle.addEventListener('click', toggleNotes);
+
+    showSlide(1);
+  } catch(err) {
+    console.error('Deck navigation error:', err);
+  }
+})();
+</script>
+</body>
+</html>
