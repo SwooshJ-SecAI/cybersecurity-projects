@@ -2,7 +2,7 @@
 
 Visual system-model diagrams for each agent in this repository. Each map shows data flow, decision logic, and component structure using a consistent dark-theme design language.
 
-**Total maps:** 15
+**Total maps:** 11
 
 | Agent | Architecture Map |
 |:---|:---|
@@ -10,15 +10,11 @@ Visual system-model diagrams for each agent in this repository. Each map shows d
 | Cicc Intelligence Refresh | [View diagram](./cicc-intelligence-refresh/architecture.html) |
 | Cicc Security Analyst | [View diagram](./cicc-security-analyst/architecture.html) |
 | Darktrace Security Agent | [View diagram](./security-agents/darktrace-security-agent/architecture.html) |
-| Freshservice Itsm Agent | [View diagram](./security-agents/freshservice-itsm-agent/architecture.html) |
 | Microsoft Purview Agent | [View diagram](./security-agents/microsoft-purview-agent/architecture.html) |
 | Palo Alto Security Agent | [View diagram](./security-agents/palo-alto-security-agent/architecture.html) |
-| Quarterly Audit Assistant | [View diagram](./compliance-automation/quarterly-audit-assistant/architecture.html) |
 | Security Investigation Copilot | [View diagram](./security-investigation-copilot/architecture.html) |
 | Security Scorecard Agent | [View diagram](./security-agents/security-scorecard-agent/architecture.html) |
 | Sentinelone Security Agent | [View diagram](./security-agents/sentinelone-security-agent/architecture.html) |
-| Soc2 Audit Agent | [View diagram](./compliance-automation/soc2-audit-agent/architecture.html) |
-| Soc2 Audit Evidence Copilot | [View diagram](./compliance-automation/soc2-audit-evidence-copilot/architecture.html) |
 | Splunk Security Agent | [View diagram](./security-agents/splunk-security-agent/architecture.html) |
 | Third Party Risk Assessor | [View diagram](./third-party-risk-assessor/architecture.html) |
 
