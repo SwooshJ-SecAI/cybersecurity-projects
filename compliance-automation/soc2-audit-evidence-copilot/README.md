@@ -4,7 +4,7 @@
 
 ## Problem It Solves
 
-Forward-facing SOC 2 evidence assistant for the organization' control owners and evidence contributors. Explains what each control proves in plain language, states exactly what evidence RSM requires (by DRL Request ID), and pre-validates submitted evidence with a full 0â€“100 quality score before it goes to review. Advisory only â€” the agent scores and recommends; human judgment, evidence acceptance, and RSM submission rest with Antonio Johnson (audit coordinator) under Tom Balloch's executive oversight. Grounded in the 2026 DRL and operational scoring rubric.
+Forward-facing SOC 2 evidence assistant for the organization' control owners and evidence contributors. Explains what each control proves in plain language, states exactly what evidence RSM requires (by DRL Request ID), and pre-validates submitted evidence with a full 0â€“100 quality score before it goes to review. Advisory only â€” the agent scores and recommends; human judgment, evidence acceptance, and RSM submission rest with SwooshJ-SecAI (audit coordinator) under Tom Balloch's executive oversight. Grounded in the 2026 DRL and operational scoring rubric.
 
 ## How It Works
 
