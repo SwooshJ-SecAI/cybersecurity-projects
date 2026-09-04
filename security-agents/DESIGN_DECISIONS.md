@@ -1,12 +1,12 @@
 # Security Tool SME Agents — Design Decisions
 
-This document explains why the security operations agents were built as eight separate vendor-specific specialists rather than one general-purpose security assistant, how their knowledge bases are structured, and what was learned building and maintaining a fleet of them.
+This document explains why the security operations agents were built as seven separate vendor-specific specialists rather than one general-purpose security assistant, how their knowledge bases are structured, and what was learned building and maintaining a fleet of them.
 
 ---
 
 ## Why Vendor-Specific SME Agents Instead of One General Agent
 
-The core decision was to build eight narrow, deep agents — one each for Splunk, Arctic Wolf, Microsoft Purview, Freshservice ITSM, SecurityScorecard, Darktrace, Palo Alto Networks, and SentinelOne — rather than a single broad security agent that tries to cover everything.
+The core decision was to build seven narrow, deep agents — one each for Splunk, Arctic Wolf, Microsoft Purview, SecurityScorecard, Darktrace, Palo Alto Networks, and SentinelOne — rather than a single broad security agent that tries to cover everything.
 
 ### The problem with a single general agent
 
@@ -18,13 +18,13 @@ A vendor-specific agent can hold the entire operational surface of one platform 
 
 ### The rationale in one sentence
 
-Security operations rewards depth over breadth, so the fleet was optimized for depth — eight specialists that are each authoritative in their domain, rather than one generalist that is mediocre everywhere.
+Security operations rewards depth over breadth, so the fleet was optimized for depth — seven specialists that are each authoritative in their domain, rather than one generalist that is mediocre everywhere.
 
 ---
 
 ## Knowledge Base Architecture
 
-Every agent in the fleet is backed by a consistent three-part knowledge base. This uniformity is what makes the fleet maintainable despite covering eight very different platforms.
+Every agent in the fleet is backed by a consistent three-part knowledge base. This uniformity is what makes the fleet maintainable despite covering seven very different platforms.
 
 ### 1. Operational knowledge
 
@@ -40,17 +40,17 @@ The action layer: given a finding, what are the concrete steps to investigate an
 
 ### Why the three-part split works
 
-Separating operational knowledge, query language, and remediation keeps each concern independently updatable. When a vendor changes its query syntax, only the query reference needs revision. When a remediation procedure changes, only the playbook layer changes. The consistent structure across all eight agents also means the pattern is teachable and reproducible — a ninth agent for a new platform follows the same template.
+Separating operational knowledge, query language, and remediation keeps each concern independently updatable. When a vendor changes its query syntax, only the query reference needs revision. When a remediation procedure changes, only the playbook layer changes. The consistent structure across all seven agents also means the pattern is teachable and reproducible — an eighth agent for a new platform follows the same template.
 
 ---
 
 ## Programmatic Agent Generation
 
-The fleet is not eight hand-built one-offs. A builder pattern generates each agent from the same structural template, populating the three knowledge base layers per vendor. This was a deliberate choice with significant consequences.
+The fleet is not seven hand-built one-offs. A builder pattern generates each agent from the same structural template, populating the three knowledge base layers per vendor. This was a deliberate choice with significant consequences.
 
 ### The benefit
 
-Generating agents from a common template guarantees consistency — every agent has the same knowledge structure, the same interaction patterns, and the same quality bar. It also makes the fleet extensible: adding a new vendor SME is a matter of supplying the vendor's operational knowledge, query reference, and playbooks, not architecting a new agent from scratch. The marginal cost of the ninth, tenth, or eleventh agent is low precisely because the pattern is programmatic.
+Generating agents from a common template guarantees consistency — every agent has the same knowledge structure, the same interaction patterns, and the same quality bar. It also makes the fleet extensible: adding a new vendor SME is a matter of supplying the vendor's operational knowledge, query reference, and playbooks, not architecting a new agent from scratch. The marginal cost of the eighth, ninth, or tenth agent is low precisely because the pattern is programmatic.
 
 ### The trade-off
 
@@ -64,13 +64,13 @@ A templated approach can produce agents that feel uniform when a platform genuin
 
 The fleet chose depth. The consequence is that a question spanning multiple platforms requires consulting multiple agents rather than one. This was accepted because cross-platform questions are the minority, and because the depth on single-platform questions — the majority of operational work — is dramatically better. Breadth is recoverable by consulting several specialists; depth is not recoverable from a generalist.
 
-### The maintenance burden of eight agents
+### The maintenance burden of seven agents
 
-Eight agents mean eight knowledge bases to keep current as vendors ship changes. This is a real, ongoing cost. It was judged acceptable for two reasons: the three-part knowledge structure localizes most updates to a single layer, and the value of accurate, deep guidance in daily security operations justifies the upkeep. A fleet that is out of date is a liability, so maintenance is treated as a first-class responsibility, not an afterthought.
+Seven agents mean seven knowledge bases to keep current as vendors ship changes. This is a real, ongoing cost. It was judged acceptable for two reasons: the three-part knowledge structure localizes most updates to a single layer, and the value of accurate, deep guidance in daily security operations justifies the upkeep. A fleet that is out of date is a liability, so maintenance is treated as a first-class responsibility, not an afterthought.
 
 ### Uniform interface vs. platform-native fidelity
 
-Presenting eight agents through a consistent interface aids usability but can slightly abstract away platform-native quirks. The knowledge base layers counter this by preserving vendor-specific detail even when the interface is uniform.
+Presenting seven agents through a consistent interface aids usability but can slightly abstract away platform-native quirks. The knowledge base layers counter this by preserving vendor-specific detail even when the interface is uniform.
 
 ---
 
@@ -82,11 +82,11 @@ Official vendor documentation reliably covers the happy path and reliably omits 
 
 ### Query languages differ more than expected
 
-The eight platforms' query and policy languages are conceptually similar but syntactically incompatible in ways that trip up anyone moving between them. A pattern that is idiomatic in one language is an error in another. Keeping the query reference as a distinct, per-agent layer was essential — there is no shared query knowledge to factor out, because the languages genuinely do not share it.
+The seven platforms' query and policy languages are conceptually similar but syntactically incompatible in ways that trip up anyone moving between them. A pattern that is idiomatic in one language is an error in another. Keeping the query reference as a distinct, per-agent layer was essential — there is no shared query knowledge to factor out, because the languages genuinely do not share it.
 
 ### Consistency of structure is what makes a fleet maintainable
 
-The single most important lesson is that a fleet of specialists is only sustainable if they share a rigid structural template. Without the consistent three-part knowledge base, eight agents would be eight separate maintenance problems. With it, they are one pattern applied eight times — and the ninth is cheap.
+The single most important lesson is that a fleet of specialists is only sustainable if they share a rigid structural template. Without the consistent three-part knowledge base, seven agents would be seven separate maintenance problems. With it, they are one pattern applied seven times — and the eighth is cheap.
 
 ### Narrow scope is a feature, not a limitation
 
