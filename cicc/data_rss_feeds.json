@@ -1,0 +1,2428 @@
+{
+  "metadata": {
+    "fetchDate": "2026-09-01T14:00:00",
+    "sources": {
+      "The Hacker News": 50,
+      "BleepingComputer": 14,
+      "The Record": 5,
+      "Dark Reading": 48,
+      "SecurityWeek": 10
+    },
+    "totalArticles": 127
+  },
+  "events": [
+    {
+      "id": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html",
+      "title": "\"The injected code runs two operations against a site's visitors: a mobile ad-fraud and gambling-redirect",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html",
+      "title": "Iranian Hackers Pose as Recruiters to",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/09/threat-actors-dont-want-better-attacks.html",
+      "title": "Threat Actors Don\u2019t Want Better",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/09/threat-actors-dont-want-better-attacks.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/09/threat-actors-dont-want-better-attacks.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/09/attackers-steal-metr-api-key-and.html",
+      "title": "Attackers Steal METR API Key and",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/09/attackers-steal-metr-api-key-and.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/09/attackers-steal-metr-api-key-and.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html",
+      "title": "Russia-Aligned UAC-0099 Plants",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+      "title": "Attackers Exploit Critical Langflow and",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html",
+      "title": "North Korean Job Fraud Expands",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html",
+      "date": "",
+      "eventType": "Nation-State",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
+      "title": "\u26a1 Weekly Recap: Chinese Spy Proxy, AI",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
+      "date": "",
+      "eventType": "Nation-State",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
+      "title": "ValleyRAT Backdoor Hides in Signed",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
+      "title": "Aurora Ransomware Operators Use",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html",
+      "title": "Securing Claude Code: The New Compliance API,",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+      "title": "China-Linked Fire Ant Hijacks Cisco",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
+      "title": "DoJ Corrects China Hacking Claim,",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html",
+      "title": "TerminalFix Uses Fake Cloudflare CAPTCHAs to",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html",
+      "date": "",
+      "eventType": "Nation-State",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
+      "title": "Five Critical WordPress Plugin and",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html",
+      "title": "Berlin Refuses to Pay Hackers Who",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html",
+      "title": "Cosmos EVM Flaw Exploited After",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/attackers-chain-two-papercut-flaws-to.html",
+      "title": "Attackers Chain Two PaperCut Flaws to",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/attackers-chain-two-papercut-flaws-to.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/attackers-chain-two-papercut-flaws-to.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/android-17-adds-os-wide-ech-to-hide.html",
+      "title": "Android 17 Adds OS-Wide ECH to",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/android-17-adds-os-wide-ech-to-hide.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/android-17-adds-os-wide-ech-to-hide.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
+      "title": "ownCloud Flaw Exploited to Steal",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html",
+      "title": "19 Chrome and Edge Extensions Found",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html",
+      "title": "Two Unitree G1 EDU Humanoid Robot",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/key-reasons-why-identity-fabric-matters.html",
+      "title": "Key Reasons Why Identity Fabric",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/key-reasons-why-identity-fabric-matters.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/key-reasons-why-identity-fabric-matters.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html",
+      "title": "Three CVSS 10.0 ServiceNow Flaws",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html",
+      "title": "China-Made ZBT Routers Ship With",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/critical-cpanel-flaw-could-let-one.html",
+      "title": "Critical cPanel Flaw Could Let",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/critical-cpanel-flaw-could-let-one.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/critical-cpanel-flaw-could-let-one.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/papercut-zero-day-exploited-in-attacks.html",
+      "title": "PaperCut Zero-Day Exploited in",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/papercut-zero-day-exploited-in-attacks.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/papercut-zero-day-exploited-in-attacks.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/apt28-linked-hookedge-backdoor-targets.html",
+      "title": "APT28-Linked HOOKEDGE Backdoor",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/apt28-linked-hookedge-backdoor-targets.html",
+      "date": "",
+      "eventType": "Nation-State",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/apt28-linked-hookedge-backdoor-targets.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html",
+      "title": "OpenAI Says Reward Hacking Drove AI",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
+      "title": "Next.js Patches Critical AVIF and Windows Flaws Enabling Unauthenticated RCE Credit:&nbsp;Hacktron",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "globalSeverity": "Critical",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/threatsday-296k-iot-botnet-100-water.html",
+      "title": "ThreatsDay: 296K IoT Botnet, 100+",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/threatsday-296k-iot-botnet-100-water.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/threatsday-296k-iot-botnet-100-water.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/amazon-kiro-prompt-injection-can.html",
+      "title": "Amazon Kiro Prompt Injection Can",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/amazon-kiro-prompt-injection-can.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/amazon-kiro-prompt-injection-can.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html",
+      "title": "Learn How to Build Security Operations",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/alleged-teampcp-hackers-charged-in.html",
+      "title": "Alleged TeamPCP Hackers Charged in",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/alleged-teampcp-hackers-charged-in.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/alleged-teampcp-hackers-charged-in.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/what-data-says-about-ai-in-security.html",
+      "title": "What the Data Says About AI in",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/what-data-says-about-ai-in-security.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/what-data-says-about-ai-in-security.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/spark-rat-targets-cambodia-abuses.html",
+      "title": "Spark RAT Targets Cambodia, Abuses",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/spark-rat-targets-cambodia-abuses.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/spark-rat-targets-cambodia-abuses.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/gocaracal-malware-uses-ethereum-smart.html",
+      "title": "GoCaracal Malware Uses Ethereum",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/gocaracal-malware-uses-ethereum-smart.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/gocaracal-malware-uses-ethereum-smart.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/gputhor-rowhammer-defeats-ecc-on-nvidia.html",
+      "title": "New GPUThor Rowhammer Defeats ECC on NVIDIA RTX A6000 to",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/gputhor-rowhammer-defeats-ecc-on-nvidia.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/gputhor-rowhammer-defeats-ecc-on-nvidia.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/cisa-adds-six-exploited-flaws-to-kev.html",
+      "title": "CISA Adds Six Exploited Flaws to KEV,",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/cisa-adds-six-exploited-flaws-to-kev.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/cisa-adds-six-exploited-flaws-to-kev.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html",
+      "title": "FBI Disrupts China-Linked QTFY",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html",
+      "title": "Nimbus Manticore Expands Toolset",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/novacookies-campaigns-abuse-genuine.html",
+      "title": "NovaCookies Campaigns Abuse Genuine",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/novacookies-campaigns-abuse-genuine.html",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/novacookies-campaigns-abuse-genuine.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html",
+      "title": "CISA Red Team Compromised Two Critical",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/cisa-red-team-compromised-two-critical.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html",
+      "title": "Unpatched Kaltura mwEmbed Flaws",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html",
+      "title": "Imagine the SOC Without a Queue:",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/claude-opus-46-bypasses-gym-booking.html",
+      "title": "Claude Opus 4.6 Bypasses Gym Booking",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/claude-opus-46-bypasses-gym-booking.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/claude-opus-46-bypasses-gym-booking.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/openai-bans-russian-chatgpt-accounts.html",
+      "title": "OpenAI Bans Russian ChatGPT Accounts",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/openai-bans-russian-chatgpt-accounts.html",
+      "date": "",
+      "eventType": "Nation-State",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/openai-bans-russian-chatgpt-accounts.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/interpol-operation-jackal-iv-arrests-58.html",
+      "title": "INTERPOL Operation Jackal IV Arrests 58,",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/interpol-operation-jackal-iv-arrests-58.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/interpol-operation-jackal-iv-arrests-58.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/newly-sleepwalker-backdoor-waits-for.html",
+      "title": "New SLEEPWALKER Backdoor Waits for",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/newly-sleepwalker-backdoor-waits-for.html",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/newly-sleepwalker-backdoor-waits-for.html"
+        }
+      ]
+    },
+    {
+      "id": "https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html",
+      "title": "Critical Gitea RCE Actively Exploited as",
+      "source": "The Hacker News",
+      "link": "https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html",
+      "date": "",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "role": "Reported",
+          "url": "https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/novocure-data-breach-affects-more-than-1-400-cancer-patients/",
+      "title": "Novocure data breach affects more than 1,400 cancer patients",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/novocure-data-breach-affects-more-than-1-400-cancer-patients/",
+      "date": "Tue, 01 Sep 2026 10:28:40 -0400",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/novocure-data-breach-affects-more-than-1-400-cancer-patients/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/why-even-the-best-edge-security-still-misses-high-risk-sessions/",
+      "title": "Why Even the Best Edge Security Still Misses High-Risk Sessions",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/why-even-the-best-edge-security-still-misses-high-risk-sessions/",
+      "date": "Tue, 01 Sep 2026 10:01:11 -0400",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "High",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/why-even-the-best-edge-security-still-misses-high-risk-sessions/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/nearly-22-000-microsoft-exchange-servers-vulnerable-to-hijack-attacks/",
+      "title": "Nearly 22,000 Microsoft Exchange servers vulnerable to hijack attacks",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/nearly-22-000-microsoft-exchange-servers-vulnerable-to-hijack-attacks/",
+      "date": "Tue, 01 Sep 2026 08:38:35 -0400",
+      "eventType": "Campaign",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/nearly-22-000-microsoft-exchange-servers-vulnerable-to-hijack-attacks/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/five-venezuelans-plead-guilty-to-atm-jackpotting-attacks-in-us/",
+      "title": "Five Venezuelans plead guilty to ATM jackpotting attacks in US",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/five-venezuelans-plead-guilty-to-atm-jackpotting-attacks-in-us/",
+      "date": "Tue, 01 Sep 2026 05:15:07 -0400",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/five-venezuelans-plead-guilty-to-atm-jackpotting-attacks-in-us/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/recently-patched-papercut-zero-days-used-in-data-theft-attacks/",
+      "title": "Recently patched PaperCut zero-days used in data theft attacks",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/recently-patched-papercut-zero-days-used-in-data-theft-attacks/",
+      "date": "Tue, 01 Sep 2026 03:48:24 -0400",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/recently-patched-papercut-zero-days-used-in-data-theft-attacks/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/cronos-blockchain-restarts-after-74-million-tectonic-exploit/",
+      "title": "Cronos blockchain restarts after $74 million Tectonic exploit",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/cronos-blockchain-restarts-after-74-million-tectonic-exploit/",
+      "date": "Mon, 31 Aug 2026 16:47:54 -0400",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/cronos-blockchain-restarts-after-74-million-tectonic-exploit/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-terminalfix-attacks-deploying-reverse-tunnels/",
+      "title": "Microsoft warns of TerminalFix attacks deploying reverse tunnels",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-terminalfix-attacks-deploying-reverse-tunnels/",
+      "date": "Mon, 31 Aug 2026 14:51:04 -0400",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-terminalfix-attacks-deploying-reverse-tunnels/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/",
+      "title": "Massive Microsoft 365 outage causes auth issues, service failures",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/",
+      "date": "Mon, 31 Aug 2026 12:56:57 -0400",
+      "eventType": "General",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-outage-as-users-report-errors/",
+      "title": "OpenAI confirms ChatGPT outage as users report errors",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-outage-as-users-report-errors/",
+      "date": "Mon, 31 Aug 2026 12:50:50 -0400",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-outage-as-users-report-errors/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/chinese-fire-ant-hackers-turn-cisco-routers-into-spying-platforms/",
+      "title": "Chinese Fire Ant hackers turn Cisco routers into spying platforms",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/chinese-fire-ant-hackers-turn-cisco-routers-into-spying-platforms/",
+      "date": "Mon, 31 Aug 2026 10:52:03 -0400",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/chinese-fire-ant-hackers-turn-cisco-routers-into-spying-platforms/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/file-servers-are-here-to-stay-heres-how-to-manage-them-securely/",
+      "title": "File servers are here to stay. Here\u2019s how to manage them securely",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/file-servers-are-here-to-stay-heres-how-to-manage-them-securely/",
+      "date": "Mon, 31 Aug 2026 10:00:10 -0400",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/file-servers-are-here-to-stay-heres-how-to-manage-them-securely/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/berlin-confirms-data-theft-after-rhysida-ransomware-attack-claims/",
+      "title": "Berlin confirms data theft after Rhysida ransomware attack claims",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/berlin-confirms-data-theft-after-rhysida-ransomware-attack-claims/",
+      "date": "Mon, 31 Aug 2026 09:30:01 -0400",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/berlin-confirms-data-theft-after-rhysida-ransomware-attack-claims/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/microsoft-says-windows-11-kb5120998-update-resets-mouse-settings/",
+      "title": "Microsoft says Windows 11 KB5120998 update resets mouse settings",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/microsoft-says-windows-11-kb5120998-update-resets-mouse-settings/",
+      "date": "Mon, 31 Aug 2026 06:23:46 -0400",
+      "eventType": "General",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/microsoft-says-windows-11-kb5120998-update-resets-mouse-settings/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.bleepingcomputer.com/news/security/nigerians-charged-US-over-sextortion-deaths-of-us-teens/",
+      "title": "Nigerians extradited to US for sextortion, deaths of two teens",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/nigerians-charged-US-over-sextortion-deaths-of-us-teens/",
+      "date": "Mon, 31 Aug 2026 05:22:47 -0400",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "role": "Reported",
+          "url": "https://www.bleepingcomputer.com/news/security/nigerians-charged-US-over-sextortion-deaths-of-us-teens/"
+        }
+      ]
+    },
+    {
+      "id": "https://therecord.media/feed",
+      "title": "Iranian cyber spies target aviation, fintech developers with new malware",
+      "source": "The Record",
+      "link": "https://therecord.media/feed",
+      "date": "Tue, 01 Sep 2026 12:33:00 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Record",
+          "role": "Reported",
+          "url": "https://therecord.media/feed"
+        }
+      ]
+    },
+    {
+      "id": "https://therecord.media/iranian-cyber-spies-target-aviation-fintech-new-malware",
+      "title": "Cyber risk from frontier AI poses \u2018most immediate concern\u2019 to global financial system, watchdog warns",
+      "source": "The Record",
+      "link": "https://therecord.media/iranian-cyber-spies-target-aviation-fintech-new-malware",
+      "date": "Tue, 01 Sep 2026 12:33:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Record",
+          "role": "Reported",
+          "url": "https://therecord.media/iranian-cyber-spies-target-aviation-fintech-new-malware"
+        }
+      ]
+    },
+    {
+      "id": "https://therecord.media/cyber-risk-from-frontier-ai-most-immediate-concern-to-global-finance",
+      "title": "Five plead guilty in latest federal ATM jackpotting case",
+      "source": "The Record",
+      "link": "https://therecord.media/cyber-risk-from-frontier-ai-most-immediate-concern-to-global-finance",
+      "date": "Tue, 01 Sep 2026 12:28:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Record",
+          "role": "Reported",
+          "url": "https://therecord.media/cyber-risk-from-frontier-ai-most-immediate-concern-to-global-finance"
+        }
+      ]
+    },
+    {
+      "id": "https://therecord.media/kansas-atm-jackpotting-guilty-pleas",
+      "title": "Fraudsters steal $6 million from Tectonic crypto platform after inflating token price",
+      "source": "The Record",
+      "link": "https://therecord.media/kansas-atm-jackpotting-guilty-pleas",
+      "date": "Mon, 31 Aug 2026 20:31:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Record",
+          "role": "Reported",
+          "url": "https://therecord.media/kansas-atm-jackpotting-guilty-pleas"
+        }
+      ]
+    },
+    {
+      "id": "https://therecord.media/crypto-tectonic-hack-cronos",
+      "title": "Berlin says it won\u2019t pay ransom after hackers steal government data",
+      "source": "The Record",
+      "link": "https://therecord.media/crypto-tectonic-hack-cronos",
+      "date": "Mon, 31 Aug 2026 19:45:00 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "The Record",
+          "role": "Reported",
+          "url": "https://therecord.media/crypto-tectonic-hack-cronos"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/endpoint-security/clickfix-campaign-comprises-31-orgs-abuses-polygon-blockchain",
+      "title": "ClickFix Campaign Compromises 31 Orgs, Abuses Polygon Blockchain",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/endpoint-security/clickfix-campaign-comprises-31-orgs-abuses-polygon-blockchain",
+      "date": "Tue, 01 Sep 2026 13:56:42 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/endpoint-security/clickfix-campaign-comprises-31-orgs-abuses-polygon-blockchain"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-users-infostealer-attacks-session-thefts",
+      "title": "Anthropic Users Hit by Infostealer Attacks, Session Thefts",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-users-infostealer-attacks-session-thefts",
+      "date": "Mon, 31 Aug 2026 21:08:46 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-users-infostealer-attacks-session-thefts"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/threat-intelligence/terminalfix-campaign-weaponizes-powershell-enterprise-attacks",
+      "title": "'TerminalFix' Campaign Weaponizes PowerShell for Enterprise Attacks",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/threat-intelligence/terminalfix-campaign-weaponizes-powershell-enterprise-attacks",
+      "date": "Mon, 31 Aug 2026 20:25:36 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/threat-intelligence/terminalfix-campaign-weaponizes-powershell-enterprise-attacks"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/the-guardrails-debate-security-researcher-changes-his-mind",
+      "title": "The Guardrails Debate: Security Researcher Changes His Mind",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/the-guardrails-debate-security-researcher-changes-his-mind",
+      "date": "Mon, 31 Aug 2026 20:09:24 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/the-guardrails-debate-security-researcher-changes-his-mind"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/model-knowing-rules-is-not-security-control",
+      "title": "AI Model Rules Are Not Security Controls",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/model-knowing-rules-is-not-security-control",
+      "date": "Mon, 31 Aug 2026 17:34:26 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/model-knowing-rules-is-not-security-control"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/hundreds-openai-agents-invaded-hugging-face-servers",
+      "title": "Hundreds of OpenAI Agents Invaded Hugging Face Servers",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/hundreds-openai-agents-invaded-hugging-face-servers",
+      "date": "Fri, 28 Aug 2026 20:19:22 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/hundreds-openai-agents-invaded-hugging-face-servers"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cybersecurity-operations/offensive-security-investments-surge-ai-threats-increase",
+      "title": "Offensive Security Investments Surge as AI Threats Increase",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cybersecurity-operations/offensive-security-investments-surge-ai-threats-increase",
+      "date": "Fri, 28 Aug 2026 18:25:43 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cybersecurity-operations/offensive-security-investments-surge-ai-threats-increase"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/ics-ot-security/you-need-cyber-deception-ot",
+      "title": "You Need Cyber Deception for OT",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/ics-ot-security/you-need-cyber-deception-ot",
+      "date": "Fri, 28 Aug 2026 13:00:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/ics-ot-security/you-need-cyber-deception-ot"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cybersecurity-operations/defining-ai-kill-switch-hard-but-necessary",
+      "title": "Defining an AI Kill Switch Is Hard, but Necessary",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cybersecurity-operations/defining-ai-kill-switch-hard-but-necessary",
+      "date": "Thu, 27 Aug 2026 19:31:45 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cybersecurity-operations/defining-ai-kill-switch-hard-but-necessary"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/vulnerabilities-threats/vulnpocalypse-repricing-bug-bounty-economy",
+      "title": "The Vulnpocalypse Is Repricing the Bug Bounty Economy",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/vulnpocalypse-repricing-bug-bounty-economy",
+      "date": "Thu, 27 Aug 2026 17:25:09 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/vulnpocalypse-repricing-bug-bounty-economy"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/vulnerabilities-threats/chinese-routers-sold-worldwide-backdoors",
+      "title": "Chinese Routers Sold Worldwide Contain Backdoors",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/chinese-routers-sold-worldwide-backdoors",
+      "date": "Thu, 27 Aug 2026 11:16:01 GMT",
+      "eventType": "Nation-State",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/chinese-routers-sold-worldwide-backdoors"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cybersecurity-operations/agentic-ai-risks-cve-program-concerns-black-hat-usa-2026",
+      "title": "Agentic AI Risks, CVE Program Concerns Permeate Black Hat USA 2026",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cybersecurity-operations/agentic-ai-risks-cve-program-concerns-black-hat-usa-2026",
+      "date": "Wed, 26 Aug 2026 21:33:06 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cybersecurity-operations/agentic-ai-risks-cve-program-concerns-black-hat-usa-2026"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-phish-eu-officials-messaging-apps",
+      "title": "Russian Hackers Phish EU Officials Over Messaging Apps",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-phish-eu-officials-messaging-apps",
+      "date": "Wed, 26 Aug 2026 19:54:34 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-phish-eu-officials-messaging-apps"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/dark-caracal-adds-new-malware-cyber-espionage-arsenal",
+      "title": "Dark Caracal Adds New Malware to Cyber Espionage Arsenal",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/dark-caracal-adds-new-malware-cyber-espionage-arsenal",
+      "date": "Wed, 26 Aug 2026 19:21:24 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/dark-caracal-adds-new-malware-cyber-espionage-arsenal"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/application-security/http-terminator-hunts-novel-desync-attacks",
+      "title": "'HTTP Terminator' Hunts for Novel Desync Attacks",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/application-security/http-terminator-hunts-novel-desync-attacks",
+      "date": "Wed, 26 Aug 2026 17:33:45 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/application-security/http-terminator-hunts-novel-desync-attacks"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/insider-threats/red-flags-expose-fake-north-korean-it-workers",
+      "title": "Red Flags That Expose Fake North Korean IT Workers",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/insider-threats/red-flags-expose-fake-north-korean-it-workers",
+      "date": "Wed, 26 Aug 2026 11:33:40 GMT",
+      "eventType": "Nation-State",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/insider-threats/red-flags-expose-fake-north-korean-it-workers"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/android-malware-hijacks-update-system-car-head-units",
+      "title": "Android Malware Hijacks Update System for Car Head Units",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/android-malware-hijacks-update-system-car-head-units",
+      "date": "Wed, 26 Aug 2026 08:30:00 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/android-malware-hijacks-update-system-car-head-units"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/endpoint-security/novacookies-steals-microsoft-365-sessions-320-a-month",
+      "title": "'NovaCookies' Kit Steals Microsoft 365 Sessions for $320 a Month",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/endpoint-security/novacookies-steals-microsoft-365-sessions-320-a-month",
+      "date": "Wed, 26 Aug 2026 08:00:00 GMT",
+      "eventType": "General",
+      "relationship": "DIRECT",
+      "matchedTechnology": "Microsoft",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/endpoint-security/novacookies-steals-microsoft-365-sessions-320-a-month"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/threat-intelligence/interpols-jackal-iv-west-african-crime-infrastructure",
+      "title": "Interpol's Jackal IV Disrupts West African Crime Infrastructure",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/threat-intelligence/interpols-jackal-iv-west-african-crime-infrastructure",
+      "date": "Tue, 25 Aug 2026 21:08:55 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/threat-intelligence/interpols-jackal-iv-west-african-crime-infrastructure"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cybersecurity-operations/nigeria-sovereign-cloud-cyber-national-security",
+      "title": "Nigeria Looks to Sovereign Cloud for Cyber, National Security",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cybersecurity-operations/nigeria-sovereign-cloud-cyber-national-security",
+      "date": "Tue, 25 Aug 2026 19:50:16 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cybersecurity-operations/nigeria-sovereign-cloud-cyber-national-security"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/hidden-prompts-trick-ai-false-email-summaries",
+      "title": "Hidden Prompts Trick AI Into False Email Summaries",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/hidden-prompts-trick-ai-false-email-summaries",
+      "date": "Tue, 25 Aug 2026 14:53:13 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/hidden-prompts-trick-ai-false-email-summaries"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/nemo-claw-networking-llm-poisoning-openclaw",
+      "title": "Finding Nemo(Claw): Networking Issue Allows for LLM Poisoning in OpenClaw",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/nemo-claw-networking-llm-poisoning-openclaw",
+      "date": "Mon, 24 Aug 2026 21:46:55 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/nemo-claw-networking-llm-poisoning-openclaw"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cybersecurity-operations/is-cyber-facing-an-affordability-crisis-",
+      "title": "Is Cyber Facing an Affordability Crisis?",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cybersecurity-operations/is-cyber-facing-an-affordability-crisis-",
+      "date": "Mon, 24 Aug 2026 20:51:27 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cybersecurity-operations/is-cyber-facing-an-affordability-crisis-"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch",
+      "title": "Exploited Zimbra Flaw Highlights Shrinking Window to Patch",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch",
+      "date": "Mon, 24 Aug 2026 15:02:32 GMT",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "High",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/data-privacy/wordlistloader-disguises-malware-ordinary-text",
+      "title": "Foul Language: WordlistLoader Disguises Malware as Ordinary Text",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/data-privacy/wordlistloader-disguises-malware-ordinary-text",
+      "date": "Mon, 24 Aug 2026 14:34:59 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/data-privacy/wordlistloader-disguises-malware-ordinary-text"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware",
+      "title": "Tricky 'SynkLoader' Multitool May Herald Ransomware",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware",
+      "date": "Mon, 24 Aug 2026 14:00:00 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/threat-intelligence/tricky-synkloader-multitool-ransomware"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/mobile-security/toxicpanda-banking-trojan-matures-enterprise-threat",
+      "title": "ToxicPanda Banking Trojan Matures Into Enterprise Threat",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/mobile-security/toxicpanda-banking-trojan-matures-enterprise-threat",
+      "date": "Fri, 21 Aug 2026 20:24:42 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/mobile-security/toxicpanda-banking-trojan-matures-enterprise-threat"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cybersecurity-operations/vulnerability-gap-why-discovery-is-outrunning-repair",
+      "title": "The Vulnerability Gap: Why Discovery Is Outrunning Repair",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cybersecurity-operations/vulnerability-gap-why-discovery-is-outrunning-repair",
+      "date": "Fri, 21 Aug 2026 17:36:53 GMT",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-gap-why-discovery-is-outrunning-repair"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/ics-ot-security/how-emerging-industrial-protocol-family-put-ot-at-risk",
+      "title": "How an Emerging Industrial Protocol Family Could Put OT at Risk",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/ics-ot-security/how-emerging-industrial-protocol-family-put-ot-at-risk",
+      "date": "Fri, 21 Aug 2026 14:00:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/ics-ot-security/how-emerging-industrial-protocol-family-put-ot-at-risk"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint",
+      "title": "OWASP Flags Top AI Skill Risks in New Security Blueprint",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint",
+      "date": "Fri, 21 Aug 2026 13:30:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/cyber-pros-help-city-hall",
+      "title": "Calling on Cyber Pros to Help Defend City Hall",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/cyber-pros-help-city-hall",
+      "date": "Fri, 21 Aug 2026 13:10:33 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/cyber-pros-help-city-hall"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/application-security/openai-adds-controls-already",
+      "title": "OpenAI Adds Controls That Should've Been There Already",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/application-security/openai-adds-controls-already",
+      "date": "Thu, 20 Aug 2026 20:42:18 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/application-security/openai-adds-controls-already"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/hardware-makers-implement-post-quantum-cryptography",
+      "title": "Hardware Makers Implement Post-Quantum Cryptography as Security Threats Near",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/hardware-makers-implement-post-quantum-cryptography",
+      "date": "Thu, 20 Aug 2026 19:11:15 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/hardware-makers-implement-post-quantum-cryptography"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/perimeter/new-custody-framework-constrains-ai-agents-inside-network",
+      "title": "New CUSTODY Framework Constrains AI Agents Inside the Network",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/perimeter/new-custody-framework-constrains-ai-agents-inside-network",
+      "date": "Thu, 20 Aug 2026 17:39:24 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/perimeter/new-custody-framework-constrains-ai-agents-inside-network"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/delta-flight-disrupted-wi-fi-hack",
+      "title": "What We Missed: Delta Flight Disrupted With Wi-Fi Hack",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/delta-flight-disrupted-wi-fi-hack",
+      "date": "Thu, 20 Aug 2026 17:32:51 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/delta-flight-disrupted-wi-fi-hack"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/vulnerabilities-threats/n-able-bug-password-vault-master-keys",
+      "title": "N-able Bug Exposes Password Vault Master Keys",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/n-able-bug-password-vault-master-keys",
+      "date": "Thu, 20 Aug 2026 14:59:22 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/n-able-bug-password-vault-master-keys"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cybersecurity-operations/money-and-mindset-the-two-biggest-roadblocks-to-cyber-policing",
+      "title": "Money and Mindset: The Two Biggest Roadblocks to Cyber Policing",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cybersecurity-operations/money-and-mindset-the-two-biggest-roadblocks-to-cyber-policing",
+      "date": "Thu, 20 Aug 2026 13:30:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cybersecurity-operations/money-and-mindset-the-two-biggest-roadblocks-to-cyber-policing"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/pakistan-transparent-tribe-afghan-cyberattacks",
+      "title": "Pakistan's Transparent Tribe Refreshes Toolset for Afghan Cyberattacks",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/pakistan-transparent-tribe-afghan-cyberattacks",
+      "date": "Wed, 19 Aug 2026 20:32:09 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/pakistan-transparent-tribe-afghan-cyberattacks"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/grandoreiro-resurfaces-mexico-campaign",
+      "title": "'Grandoreiro' Malware Resurfaces With Mexico Campaign",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/grandoreiro-resurfaces-mexico-campaign",
+      "date": "Wed, 19 Aug 2026 19:54:43 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/grandoreiro-resurfaces-mexico-campaign"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/application-security/no-filter-kriminal-ai-platform-cybercrime-concerns",
+      "title": "No-Filter 'Kriminal' AI Platform Raises Cybercrime Concerns",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/application-security/no-filter-kriminal-ai-platform-cybercrime-concerns",
+      "date": "Wed, 19 Aug 2026 16:58:23 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/application-security/no-filter-kriminal-ai-platform-cybercrime-concerns"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/agentic-ai-new-insider-threat-model",
+      "title": "Agentic AI Presents New Insider Threat Model for Orgs",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/agentic-ai-new-insider-threat-model",
+      "date": "Wed, 19 Aug 2026 01:00:00 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/agentic-ai-new-insider-threat-model"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/threat-intelligence/silkparasite-central-asian-orgs-flurry-rats",
+      "title": "SilkParasite Threatens Central Asian Orgs With Flurry of RATs",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/threat-intelligence/silkparasite-central-asian-orgs-flurry-rats",
+      "date": "Tue, 18 Aug 2026 21:25:58 GMT",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/threat-intelligence/silkparasite-central-asian-orgs-flurry-rats"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/china-linked-hacker-ai-capabilities-apac-attack",
+      "title": "China-Linked Hacker Shows AI Capabilities in APAC Attack",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-linked-hacker-ai-capabilities-apac-attack",
+      "date": "Tue, 18 Aug 2026 20:17:24 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-linked-hacker-ai-capabilities-apac-attack"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/application-security/critical-gitlab-zero-click-flaw-mitigation-challenges",
+      "title": "Critical GitLab Zero-Click Flaw Poses Mitigation Challenges",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/application-security/critical-gitlab-zero-click-flaw-mitigation-challenges",
+      "date": "Tue, 18 Aug 2026 19:09:51 GMT",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/application-security/critical-gitlab-zero-click-flaw-mitigation-challenges"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/vulnerabilities-threats/cosnitch-attack-copilot-mapping-out-architecture",
+      "title": "'CoSnitch' Attack Tricked Copilot Into Mapping Out Architecture",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/cosnitch-attack-copilot-mapping-out-architecture",
+      "date": "Tue, 18 Aug 2026 18:32:01 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/cosnitch-attack-copilot-mapping-out-architecture"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/vulnerabilities-threats/industrial-accidents-rogue-ai-agent-attacks-sandbox-failures",
+      "title": "The 'Industrial Accidents' Behind Rogue AI Agent Attacks \u2014 and the Sandbox Failures Exposed",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/industrial-accidents-rogue-ai-agent-attacks-sandbox-failures",
+      "date": "Tue, 18 Aug 2026 13:00:00 GMT",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/industrial-accidents-rogue-ai-agent-attacks-sandbox-failures"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyber-risk/cisos-break-their-silence-in-declassified-docuseries",
+      "title": "CISOs Break Their Silence in 'Declassified' Docuseries",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyber-risk/cisos-break-their-silence-in-declassified-docuseries",
+      "date": "",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyber-risk/cisos-break-their-silence-in-declassified-docuseries"
+        }
+      ]
+    },
+    {
+      "id": "https://www.darkreading.com/cyberattacks-data-breaches/ransom-busters-ransomware-actor-incident-recovery-service",
+      "title": "'Ransom Busters': Ransomware Actor Poses as Incident-Recovery Service",
+      "source": "Dark Reading",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/ransom-busters-ransomware-actor-incident-recovery-service",
+      "date": "",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "role": "Reported",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/ransom-busters-ransomware-actor-incident-recovery-service"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/australia-arrests-2-alleged-teampcp-hackers/",
+      "title": "Australia Arrests 2 Alleged TeamPCP Hackers",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/australia-arrests-2-alleged-teampcp-hackers/",
+      "date": "Thu, 27 Aug 2026 12:48:03 +0000",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/australia-arrests-2-alleged-teampcp-hackers/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/openai-agents-coordinated-via-makeshift-message-board-ahead-of-hugging-face-hack/",
+      "title": "OpenAI Agents Coordinated via Makeshift Message Board Ahead of Hugging Face Hack",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/openai-agents-coordinated-via-makeshift-message-board-ahead-of-hugging-face-hack/",
+      "date": "Thu, 27 Aug 2026 11:58:01 +0000",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/openai-agents-coordinated-via-makeshift-message-board-ahead-of-hugging-face-hack/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/okta-shares-surge-on-strong-earnings-growing-demand-for-ai-identity-security/",
+      "title": "Okta Shares Surge on Strong Earnings, Growing Demand for AI Identity Security",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/okta-shares-surge-on-strong-earnings-growing-demand-for-ai-identity-security/",
+      "date": "Thu, 27 Aug 2026 11:53:10 +0000",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/okta-shares-surge-on-strong-earnings-growing-demand-for-ai-identity-security/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/ciso-conversations-chris-wheeler-trust-is-the-job-from-the-navy-to-the-c-suite/",
+      "title": "CISO Conversations: Chris Wheeler \u2013 Trust Is the Job, From the Navy to the C-Suite",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/ciso-conversations-chris-wheeler-trust-is-the-job-from-the-navy-to-the-c-suite/",
+      "date": "Thu, 27 Aug 2026 11:15:00 +0000",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/ciso-conversations-chris-wheeler-trust-is-the-job-from-the-navy-to-the-c-suite/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/cyberattack-causes-global-disruption-at-boston-scientific/",
+      "title": "Cyberattack Causes Global Disruption at Boston Scientific",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/cyberattack-causes-global-disruption-at-boston-scientific/",
+      "date": "Thu, 27 Aug 2026 10:18:27 +0000",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/cyberattack-causes-global-disruption-at-boston-scientific/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/the-future-of-ai-driven-security-depends-on-complete-data/",
+      "title": "The Future of AI-Driven Security Depends on Complete Data",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/the-future-of-ai-driven-security-depends-on-complete-data/",
+      "date": "Thu, 27 Aug 2026 10:00:00 +0000",
+      "eventType": "General",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/the-future-of-ai-driven-security-depends-on-complete-data/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/us-disrupts-chinese-hacking-platform-used-in-military-and-critical-infrastructure-attacks/",
+      "title": "US Disrupts Chinese Hacking Platform Used in Military and Critical Infrastructure Attacks",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/us-disrupts-chinese-hacking-platform-used-in-military-and-critical-infrastructure-attacks/",
+      "date": "Thu, 27 Aug 2026 09:01:06 +0000",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Critical",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/us-disrupts-chinese-hacking-platform-used-in-military-and-critical-infrastructure-attacks/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/pro-russian-hackers-claim-responsibility-for-major-cyberattack-on-norways-public-digital-services/",
+      "title": "Pro-Russian Hackers Claim Responsibility for Major Cyberattack on Norway\u2019s Public Digital Services",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/pro-russian-hackers-claim-responsibility-for-major-cyberattack-on-norways-public-digital-services/",
+      "date": "Thu, 27 Aug 2026 08:00:00 +0000",
+      "eventType": "Campaign",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/pro-russian-hackers-claim-responsibility-for-major-cyberattack-on-norways-public-digital-services/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/recent-citrix-netscaler-vulnerability-exploited-in-the-wild/",
+      "title": "Recent Citrix NetScaler Vulnerability Exploited in the Wild",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/recent-citrix-netscaler-vulnerability-exploited-in-the-wild/",
+      "date": "Thu, 27 Aug 2026 04:39:19 +0000",
+      "eventType": "Vulnerability",
+      "relationship": "NONE",
+      "matchedTechnology": "--",
+      "globalSeverity": "Medium",
+      "activeExploitation": true,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/recent-citrix-netscaler-vulnerability-exploited-in-the-wild/"
+        }
+      ]
+    },
+    {
+      "id": "https://www.securityweek.com/ai-speeds-up-malware-development-not-its-success-rate-analysis/",
+      "title": "AI Speeds Up Malware Development, Not Its Success Rate: Analysis",
+      "source": "SecurityWeek",
+      "link": "https://www.securityweek.com/ai-speeds-up-malware-development-not-its-success-rate-analysis/",
+      "date": "Wed, 26 Aug 2026 15:23:45 +0000",
+      "eventType": "Campaign",
+      "relationship": "SOURCE ONLY",
+      "matchedTechnology": "Palo Alto Networks",
+      "globalSeverity": "Medium",
+      "activeExploitation": false,
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "role": "Reported",
+          "url": "https://www.securityweek.com/ai-speeds-up-malware-development-not-its-success-rate-analysis/"
+        }
+      ]
+    }
+  ]
+}
