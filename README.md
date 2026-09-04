@@ -36,8 +36,7 @@ SOC 2, ISO 27001, and HIPAA compliance tooling — evidence collection, control-
 ### [vulnerability-scanner/](./vulnerability-scanner/)
 Vulnerability report summarization — transforms raw scan output (Nessus, Qualys, ZAP) into executive-ready reports with CVSS scoring and MITRE ATT&CK mapping.
 
-### [freshservice-integration/](./freshservice-integration/)
-ITSM automation — end-to-end ticket creation, intelligent routing, and stakeholder notification against a Freshservice instance.
+
 
 ---
 
