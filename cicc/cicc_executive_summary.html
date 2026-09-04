@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CICC Executive Summary Briefing | Example Corp | September 1, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<script src="/vendor/highcharts/highcharts.js"></script>
+<script src="/vendor/highcharts/modules/accessibility.js"></script>
+<style>
+:root{
+  --bg:#0E553F;--bg2:#0A3D2E;--bg3:#062D20;
+  --accent:#FEAD77;--accent-dim:rgba(254,173,119,0.12);--accent-border:rgba(254,173,119,0.3);
+  --crit:#BE4D00;--crit-dim:rgba(190,77,0,0.12);
+  --warn:#E87722;--warn-dim:rgba(232,119,34,0.12);
+  --green:#85D09A;--green-dim:rgba(133,208,154,0.12);
+  --white:#FFF;--dim:#D9D8D6;--muted:#76777A;--dark:#54565A;
+  --border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.15);
+  --radius:8px;--font:'Lato','Segoe UI',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--white);font-family:var(--font);line-height:1.6}
+.page{max-width:1100px;margin:0 auto;padding:40px 32px 80px}
+.header{border-bottom:1px solid var(--border2);padding-bottom:24px;margin-bottom:32px}
+.header-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.header h1{font-size:28px;font-weight:300;letter-spacing:.04em}
+.header h1 span{color:var(--accent);font-weight:700}
+.header-meta{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.classification{display:inline-block;padding:2px 10px;border:1px solid var(--accent-border);border-radius:3px;font-size:9px;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.header-sub{font-size:13px;color:var(--dim);margin-top:4px}
+.section{margin-bottom:40px}
+.section-hdr{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.section-num{font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-dim);padding:2px 8px;border-radius:3px;letter-spacing:.08em}
+.section-title{font-size:16px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.section-divider{flex:1;height:1px;background:var(--border2)}
+.alert-banner{background:var(--crit-dim);border:1px solid rgba(190,77,0,0.3);border-left:4px solid var(--crit);border-radius:var(--radius);padding:16px 20px;margin-bottom:32px;display:flex;align-items:flex-start;gap:12px}
+.alert-icon{font-size:20px;color:var(--crit);flex-shrink:0;margin-top:2px;font-weight:900}
+.alert-body{flex:1}
+.alert-title{font-size:12px;font-weight:700;color:var(--crit);letter-spacing:.08em;margin-bottom:4px}
+.alert-text{font-size:12px;color:var(--dim);line-height:1.5}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:32px}
+.kpi{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;position:relative}
+.kpi-label{font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.kpi-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.kpi-val{font-size:28px;font-weight:900;margin-bottom:2px}
+.kpi-sub{font-size:10px;color:var(--muted)}
+.kpi-target{font-size:9px;color:var(--dark);margin-top:6px;padding-top:6px;border-top:1px solid var(--border)}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.card-title{font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;color:var(--muted);font-weight:700;font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:8px 10px;border-bottom:1px solid var(--border2)}
+td{padding:8px 10px;border-bottom:1px solid var(--border);color:var(--dim)}
+tr:hover td{background:rgba(255,255,255,0.02)}
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.chart-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.badge{display:inline-block;padding:2px 8px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:.06em}
+.badge-crit{background:var(--crit-dim);color:var(--crit);border:1px solid rgba(190,77,0,0.3)}
+.badge-high{background:var(--warn-dim);color:var(--warn);border:1px solid rgba(232,119,34,0.3)}
+.badge-med{background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent-border)}
+.badge-good{background:var(--green-dim);color:var(--green);border:1px solid rgba(133,208,154,0.3)}
+.badge-new{background:rgba(254,173,119,0.2);color:var(--accent);border:1px solid var(--accent-border)}
+.prog-row{margin-bottom:14px}
+.prog-label{display:flex;justify-content:space-between;margin-bottom:4px}
+.prog-name{font-size:11px;color:var(--dim)}
+.prog-val{font-size:11px;font-weight:700}
+.prog-bar{height:6px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden}
+.prog-fill{height:100%;border-radius:3px;transition:width .8s ease}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tl-col{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.tl-hdr{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.tl-badge{font-size:9px;font-weight:700;letter-spacing:.08em;padding:3px 10px;border-radius:3px}
+.tl-title{font-size:13px;font-weight:700}
+.tl-items{list-style:none}
+.tl-items li{font-size:11px;color:var(--dim);padding:6px 0;border-bottom:1px solid var(--border);display:flex;gap:8px}
+.tl-items li:last-child{border:none}
+.tl-num{font-size:10px;font-weight:700;width:18px;flex-shrink:0}
+.headline-list{list-style:none;margin:0;padding:0}
+.headline-list li{font-size:11px;color:var(--dim);padding:7px 0;border-bottom:1px solid var(--border);display:flex;gap:8px}
+.headline-list li:last-child{border:none}
+.hl-marker{color:var(--accent);font-weight:700;flex-shrink:0}
+.actor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.actor-tag{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:6px 10px;font-size:10px;display:flex;justify-content:space-between}
+.actor-name{color:var(--dim)}
+.actor-count{color:var(--accent);font-weight:700}
+.footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--border2);text-align:center;font-size:10px;color:var(--muted);letter-spacing:.06em}
+@media print{body{background:#fff;color:#222}.kpi,.card,.chart-box,.tl-col{border-color:#ddd;background:#f8f8f8}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-top">
+    <div>
+      <h1><span>CYBER INTELLIGENCE COMMAND CENTER</span></h1>
+      <div class="header-sub">External Cyber Situational Awareness & Technology Relevance Platform</div>
+    </div>
+    <div style="text-align:right">
+      <div class="classification">INTERNAL USE ONLY</div>
+      <div class="header-meta" style="margin-top:6px">Example Corp | Executive Summary Briefing</div>
+      <div class="header-meta">September 1, 2026 | KEV v2026.08.31</div>
+    </div>
+  </div>
+</div>
+
+<!-- PRIORITY ALERT -->
+<div class="alert-banner">
+  <div class="alert-icon">!</div>
+  <div class="alert-body">
+    <div class="alert-title">PRIORITY ALERT -- ACTIVE EXPLOITATION AFFECTING OUR INFRASTRUCTURE</div>
+    <div class="alert-text">
+      <strong>CVE-2026-33824</strong> (Microsoft IKE) -- CVSS 9.8, EPSS 72.7%, Relevance Score 94 CRITICAL. Confirmed active exploitation. DIRECT match to our technology stack.
+      <strong>CVE-2026-55040</strong> (SharePoint) EPSS stabilized at 39.7% after 7x spike last week -- exploitation probability remains elevated.
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 1: EXECUTIVE KPIs -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-hdr">
+    <span class="section-num">01</span>
+    <span class="section-title">Executive KPIs</span>
+    <span class="section-divider"></span>
+  </div>
+  <div class="kpi-grid">
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--crit)"></span>GLOBAL THREAT LEVEL</div><div class="kpi-val" style="color:var(--crit)">ELEVATED</div><div class="kpi-sub">31 CISA KEV entries in 30-day window</div></div>
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--crit)"></span>DIRECT MATCHES</div><div class="kpi-val" style="color:var(--crit)">4</div><div class="kpi-sub">Confirmed exploited vulns in our stack</div><div class="kpi-target">TARGET: 0 unresolved within 72 hours</div></div>
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--warn)"></span>EPSS ACCELERATION</div><div class="kpi-val" style="color:var(--warn)">1</div><div class="kpi-sub">SharePoint: 5.6% to 39.7% (7x) -- stabilized</div><div class="kpi-target">Monitoring -- no further increase</div></div>
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--green)"></span>MEAN TIME TO SURFACE</div><div class="kpi-val" style="color:var(--green)">&lt;24h</div><div class="kpi-sub">KEV publication to CICC detection</div><div class="kpi-target">TARGET: Same-day detection</div></div>
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--green)"></span>CISA KEV COMPLIANCE</div><div class="kpi-val" style="color:var(--green)">4/4</div><div class="kpi-sub">Within federal remediation window</div><div class="kpi-target">0 past due</div></div>
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--crit)"></span>SOURCE COVERAGE</div><div class="kpi-val" style="color:var(--crit)">25%</div><div class="kpi-sub">8 of 32 planned sources active</div><div class="kpi-target">TARGET: 100% within 90 days</div></div>
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--crit)"></span>UNRESOLVED EVENTS</div><div class="kpi-val" style="color:var(--crit)">4</div><div class="kpi-sub">1 Critical + 3 High requiring review</div><div class="kpi-target">TARGET: 0 beyond 72-hour SLA</div></div>
+    <div class="kpi"><div class="kpi-label"><span class="kpi-dot" style="background:var(--accent)"></span>TOTAL CIEs</div><div class="kpi-val" style="color:var(--accent)">158</div><div class="kpi-sub">After dedup + corroboration</div><div class="kpi-target">31 KEV + 127 RSS (5 sources)</div></div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: DIRECT TECHNOLOGY IMPACT -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-hdr">
+    <span class="section-num">02</span>
+    <span class="section-title">Direct Technology Impact</span>
+    <span class="section-divider"></span>
+  </div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-title">Confirmed Exploited Vulnerabilities Affecting Our Technology Stack</div>
+    <table>
+      <thead><tr><th>CVE</th><th>Product</th><th>CVSS</th><th>EPSS</th><th>Score</th><th>Class</th><th>CWE</th><th>MITRE</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr style="background:var(--crit-dim)"><td style="color:var(--white);font-weight:700">CVE-2026-33824</td><td style="color:var(--white)">Microsoft IKE</td><td style="color:var(--crit);font-weight:700">9.8</td><td style="color:var(--crit);font-weight:700">72.7%</td><td style="color:var(--crit);font-weight:700;font-size:14px">94</td><td><span class="badge badge-crit">CRITICAL</span></td><td style="color:var(--muted)">CWE-415</td><td style="color:var(--muted)">T1203</td><td><span class="badge badge-crit">REVIEW REQUIRED</span></td></tr>
+        <tr><td style="color:var(--white);font-weight:700">CVE-2026-55040</td><td style="color:var(--white)">SharePoint</td><td style="color:var(--crit);font-weight:700">9.1</td><td style="color:var(--warn);font-weight:700">39.7%</td><td style="color:var(--warn);font-weight:700;font-size:14px">86</td><td><span class="badge badge-high">HIGH</span></td><td style="color:var(--muted)">CWE-1390</td><td style="color:var(--muted)">T1078</td><td><span class="badge badge-high">REVIEW REQUIRED</span></td></tr>
+        <tr><td style="color:var(--white);font-weight:700">CVE-2019-1068</td><td style="color:var(--white)">SQL Server</td><td style="color:var(--warn);font-weight:700">8.8</td><td style="color:var(--warn);font-weight:700">52.8%</td><td style="color:var(--warn);font-weight:700;font-size:14px">85</td><td><span class="badge badge-high">HIGH</span></td><td style="color:var(--muted)">--</td><td style="color:var(--muted)">--</td><td><span class="badge badge-new">NEW -- AUG 26</span></td></tr>
+        <tr><td style="color:var(--white);font-weight:700">CVE-2026-68820</td><td style="color:var(--white)">WinSock</td><td style="color:var(--warn);font-weight:700">7.0</td><td style="color:var(--green)">6.2%</td><td style="color:var(--warn);font-weight:700;font-size:14px">79</td><td><span class="badge badge-high">HIGH</span></td><td style="color:var(--muted)">CWE-416</td><td style="color:var(--muted)">T1203</td><td><span class="badge badge-high">REVIEW REQUIRED</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="alert-banner" style="border-left-color:var(--warn);background:var(--warn-dim)">
+    <div class="alert-icon" style="color:var(--warn)">!</div>
+    <div class="alert-body">
+      <div class="alert-title" style="color:var(--warn)">EPSS STATUS -- CVE-2026-55040 (SHAREPOINT)</div>
+      <div class="alert-text">EPSS rose from <strong>5.6%</strong> to <strong>39.7%</strong> last week (7x increase). As of September 1, the score has <strong>stabilized</strong> at 39.7% -- no further acceleration. Exploitation probability remains elevated. Continued monitoring recommended.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: ANALYTICAL DASHBOARDS -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-hdr">
+    <span class="section-num">03</span>
+    <span class="section-title">Analytical Dashboards</span>
+    <span class="section-divider"></span>
+  </div>
+  <div class="chart-row">
+    <div class="chart-box"><div class="card-title">CVSS Severity Distribution (31 KEV Entries)</div><div id="ch-cvss" style="height:240px"></div></div>
+    <div class="chart-box"><div class="card-title">Top 10 EPSS Exploitation Probability</div><div id="ch-epss" style="height:240px"></div></div>
+  </div>
+  <div class="chart-row">
+    <div class="chart-box"><div class="card-title">Organizational Relevance Score Distribution</div><div id="ch-rel" style="height:240px"></div></div>
+    <div class="chart-box"><div class="card-title">CISA KEV Additions -- 30-Day Timeline</div><div id="ch-timeline" style="height:240px"></div></div>
+  </div>
+  <div class="chart-row">
+    <div class="chart-box"><div class="card-title">Vendor Exposure Map</div><div id="ch-vendor" style="height:240px"></div></div>
+    <div class="chart-box">
+      <div class="card-title">Intelligence Source Coverage</div>
+      <div style="padding:8px 0">
+        <div class="prog-row"><div class="prog-label"><span class="prog-name">Attack Landscape</span><span class="prog-val" style="color:var(--accent)">5 / 11 (45%)</span></div><div class="prog-bar"><div class="prog-fill" style="width:45%;background:var(--accent)"></div></div><div style="font-size:9px;color:var(--muted);margin-top:2px">THN, BleepingComputer, The Record, Dark Reading, SecurityWeek</div></div>
+        <div class="prog-row"><div class="prog-label"><span class="prog-name">Threat Research</span><span class="prog-val" style="color:var(--crit)">0 / 10 (0%)</span></div><div class="prog-bar"><div class="prog-fill" style="width:0%;background:var(--crit)"></div></div><div style="font-size:9px;color:var(--crit);margin-top:2px">CRITICAL GAP -- No visibility into threat actor TTPs</div></div>
+        <div class="prog-row"><div class="prog-label"><span class="prog-name">Authoritative Intelligence</span><span class="prog-val" style="color:var(--green)">3 / 5 (60%)</span></div><div class="prog-bar"><div class="prog-fill" style="width:60%;background:var(--green)"></div></div><div style="font-size:9px;color:var(--muted);margin-top:2px">CISA KEV, NVD, EPSS active | MITRE ATT&CK, CVE.org pending</div></div>
+        <div class="prog-row"><div class="prog-label"><span class="prog-name">IOC Enrichment</span><span class="prog-val" style="color:var(--crit)">0 / 6 (0%)</span></div><div class="prog-bar"><div class="prog-fill" style="width:0%;background:var(--crit)"></div></div><div style="font-size:9px;color:var(--crit);margin-top:2px">CRITICAL GAP -- No indicator data from ThreatFox, URLhaus, MalwareBazaar</div></div>
+        <div style="border-top:1px solid var(--border2);margin-top:12px;padding-top:12px"><div class="prog-label"><span class="prog-name" style="font-weight:700;color:var(--white)">Overall Coverage</span><span class="prog-val" style="color:var(--crit);font-size:14px">8 / 32 (25%)</span></div><div class="prog-bar" style="height:10px"><div class="prog-fill" style="width:25%;background:linear-gradient(90deg,var(--accent),var(--warn))"></div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-title">12-Factor Organizational Relevance Scoring Model</div>
+    <div id="ch-scoring" style="height:280px"></div>
+    <div style="margin-top:12px;padding:12px 16px;background:var(--bg3);border-radius:6px;border-left:3px solid var(--accent)">
+      <div style="font-size:10px;font-weight:700;color:var(--accent);letter-spacing:.08em;margin-bottom:4px">WORKED EXAMPLE: CVE-2026-33824 = 94 CRITICAL</div>
+      <div style="font-size:10px;color:var(--dim);line-height:1.6">Technology Match +20 (DIRECT, Microsoft) + Active Exploitation +18 + CISA KEV +12 + Threat Severity +12 (Critical) + CVSS +8 (9.8) + Exploit Availability +7 + Product Criticality +6 (IKE) + EPSS +5 (72.7%) + Source Confidence +3 + Recency +3 = <strong style="color:var(--crit)">94 CRITICAL</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 4: THREAT LANDSCAPE -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-hdr">
+    <span class="section-num">04</span>
+    <span class="section-title">Notable Threat Landscape Events</span>
+    <span class="section-divider"></span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div class="card">
+      <div class="card-title">Headlines (Aug 27 - Sep 1)</div>
+      <ul class="headline-list">
+        <li><span class="hl-marker">--</span> BGP hijacking attack delivers malicious Virtualizor updates</li>
+        <li><span class="hl-marker">--</span> 22,000 Microsoft Exchange servers vulnerable to hijack attacks</li>
+        <li><span class="hl-marker">--</span> Microsoft 365 outage causes auth issues and email failures</li>
+        <li><span class="hl-marker">--</span> Chinese Fire Ant APT hijacks Cisco routers for espionage</li>
+        <li><span class="hl-marker">--</span> TerminalFix ClickFix variant deploys reverse tunnels via fake CAPTCHAs</li>
+        <li><span class="hl-marker">--</span> Rhysida ransomware behind Berlin government data theft</li>
+        <li><span class="hl-marker">--</span> Iranian Nimbus Manticore targets aviation/fintech with NodeRabbit</li>
+        <li><span class="hl-marker">--</span> PaperCut zero-days used in data theft attacks</li>
+        <li><span class="hl-marker">--</span> Aurora ransomware operators using Cursor AI in attacks</li>
+        <li><span class="hl-marker">--</span> UAC-0099 plants nuclear weapon prompt to disrupt AI analysis</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Threat Actors Identified (13)</div>
+      <div class="actor-grid">
+        <div class="actor-tag"><span class="actor-name">TerminalFix</span><span class="actor-count">3</span></div>
+        <div class="actor-tag"><span class="actor-name">DPRK IT Workers</span><span class="actor-count">2</span></div>
+        <div class="actor-tag"><span class="actor-name">Fire Ant (China)</span><span class="actor-count">2</span></div>
+        <div class="actor-tag"><span class="actor-name">TeamPCP</span><span class="actor-count">2</span></div>
+        <div class="actor-tag"><span class="actor-name">QTFY (China)</span><span class="actor-count">2</span></div>
+        <div class="actor-tag"><span class="actor-name">NovaCookies</span><span class="actor-count">2</span></div>
+        <div class="actor-tag"><span class="actor-name">UAC-0099 (Russia)</span><span class="actor-count">1</span></div>
+        <div class="actor-tag"><span class="actor-name">Aurora</span><span class="actor-count">1</span></div>
+        <div class="actor-tag"><span class="actor-name">APT28 (Russia)</span><span class="actor-count">1</span></div>
+        <div class="actor-tag"><span class="actor-name">Nimbus Manticore</span><span class="actor-count">1</span></div>
+        <div class="actor-tag"><span class="actor-name">Rhysida</span><span class="actor-count">1</span></div>
+        <div class="actor-tag"><span class="actor-name">ClickFix Operators</span><span class="actor-count">1</span></div>
+        <div class="actor-tag"><span class="actor-name">Dark Caracal</span><span class="actor-count">1</span></div>
+      </div>
+      <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--border)">
+        <div style="font-size:10px;color:var(--muted);line-height:1.5">Nation-state activity dominated by China (Fire Ant, QTFY) and Russia (UAC-0099, APT28). DPRK IT worker scheme expanding beyond IT into healthcare and sales roles. Ransomware operators (Aurora, Rhysida) adopting AI-assisted tooling.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 5: RECOMMENDED ACTIONS & TIMELINE -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-hdr">
+    <span class="section-num">05</span>
+    <span class="section-title">Recommended Actions & Improvement Timeline</span>
+    <span class="section-divider"></span>
+  </div>
+  <div class="timeline">
+    <div class="tl-col" style="border-top:3px solid var(--crit)">
+      <div class="tl-hdr"><span class="tl-badge" style="background:var(--crit-dim);color:var(--crit)">IMMEDIATE</span><span class="tl-title" style="color:var(--crit)">This Week</span></div>
+      <ul class="tl-items">
+        <li><span class="tl-num" style="color:var(--crit)">1.</span> Triage all 4 DIRECT technology matches -- verify patch status for CVE-2026-33824, CVE-2026-55040, CVE-2019-1068, CVE-2026-68820</li>
+        <li><span class="tl-num" style="color:var(--crit)">2.</span> Monitor SharePoint EPSS -- stabilized at 39.7% but remains elevated</li>
+        <li><span class="tl-num" style="color:var(--crit)">3.</span> Validate SQL Server exposure for CVE-2019-1068 (added to KEV Aug 26)</li>
+        <li><span class="tl-num" style="color:var(--crit)">4.</span> Assign analyst ownership for each DIRECT match with daily status updates</li>
+      </ul>
+    </div>
+    <div class="tl-col" style="border-top:3px solid var(--warn)">
+      <div class="tl-hdr"><span class="tl-badge" style="background:var(--warn-dim);color:var(--warn)">SHORT-TERM</span><span class="tl-title" style="color:var(--warn)">30 Days</span></div>
+      <ul class="tl-items">
+        <li><span class="tl-num" style="color:var(--warn)">5.</span> Expand source coverage from 25% to 75% -- connect Threat Research feeds (Unit 42, Mandiant, Microsoft Security)</li>
+        <li><span class="tl-num" style="color:var(--warn)">6.</span> Establish operational SLA: 0 unresolved DIRECT matches older than 72 hours</li>
+        <li><span class="tl-num" style="color:var(--warn)">7.</span> Formalize Technology Watchlist with approved IT asset inventory from leadership</li>
+        <li><span class="tl-num" style="color:var(--warn)">8.</span> Connect MITRE ATT&CK STIX data feed for automated technique mapping</li>
+      </ul>
+    </div>
+    <div class="tl-col" style="border-top:3px solid var(--green)">
+      <div class="tl-hdr"><span class="tl-badge" style="background:var(--green-dim);color:var(--green)">MEDIUM-TERM</span><span class="tl-title" style="color:var(--green)">90 Days</span></div>
+      <ul class="tl-items">
+        <li><span class="tl-num" style="color:var(--green)">9.</span> Achieve 100% source coverage across all 32 planned intelligence sources</li>
+        <li><span class="tl-num" style="color:var(--green)">10.</span> Automate daily pipeline execution (currently manual via CICC Refresh Agent)</li>
+        <li><span class="tl-num" style="color:var(--green)">11.</span> Implement analyst collaboration model for shift handoffs using export feature</li>
+        <li><span class="tl-num" style="color:var(--green)">12.</span> Establish CICC situational briefing as part of daily security standup</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 6: LEADERSHIP DECISION POINTS -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-hdr">
+    <span class="section-num">06</span>
+    <span class="section-title">Leadership Decision Points</span>
+    <span class="section-divider"></span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+    <div class="card" style="border-left:3px solid var(--accent)"><div style="font-size:24px;font-weight:900;color:var(--accent);margin-bottom:8px">1</div><div style="font-size:13px;font-weight:700;color:var(--white);margin-bottom:6px">Approve Technology Watchlist</div><div style="font-size:11px;color:var(--dim);line-height:1.5">Formalize asset inventory integration. Current: 12 placeholder entries. Need: comprehensive list from IT asset management with leadership sign-off. This determines what we correlate against.</div></div>
+    <div class="card" style="border-left:3px solid var(--accent)"><div style="font-size:24px;font-weight:900;color:var(--accent);margin-bottom:8px">2</div><div style="font-size:13px;font-weight:700;color:var(--white);margin-bottom:6px">Fund Source Expansion</div><div style="font-size:11px;color:var(--dim);line-height:1.5">Threat Research (Unit 42, Mandiant) and IOC feeds (ThreatFox, URLhaus) require API access and potential commercial subscriptions. Two critical visibility gaps at 0% coverage.</div></div>
+    <div class="card" style="border-left:3px solid var(--accent)"><div style="font-size:24px;font-weight:900;color:var(--accent);margin-bottom:8px">3</div><div style="font-size:13px;font-weight:700;color:var(--white);margin-bottom:6px">Establish CICC Morning Brief</div><div style="font-size:11px;color:var(--dim);line-height:1.5">Integrate CICC situational briefing into daily security standup. Platform includes analyst query engine, shift handoff export, and configurable alert thresholds. Immediate operational value.</div></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">Example Corp | Cyber Intelligence Command Center | Executive Summary Briefing | September 1, 2026 | v071</div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- HIGHCHARTS -->
+<!-- ============================================================ -->
+<script>
+var HC={chart:{backgroundColor:'transparent',style:{fontFamily:'Lato,sans-serif'}},title:{style:{color:'#FFF',fontSize:'13px',fontWeight:'700'}},subtitle:{style:{color:'#76777A',fontSize:'10px'}},xAxis:{labels:{style:{color:'#76777A',fontSize:'9px'}},gridLineColor:'rgba(255,255,255,0.05)',lineColor:'rgba(255,255,255,0.1)',tickColor:'rgba(255,255,255,0.1)'},yAxis:{labels:{style:{color:'#76777A',fontSize:'9px'}},gridLineColor:'rgba(255,255,255,0.05)',title:{style:{color:'#76777A',fontSize:'9px'}}},legend:{itemStyle:{color:'#D9D8D6',fontSize:'10px'},itemHoverStyle:{color:'#FFF'}},tooltip:{backgroundColor:'#0A3D2E',borderColor:'rgba(255,255,255,0.15)',style:{color:'#FFF',fontSize:'11px'}},credits:{enabled:false},plotOptions:{series:{animation:{duration:800}}}};
+Highcharts.setOptions(HC);
+
+// 1. CVSS
+Highcharts.chart('ch-cvss',{chart:{type:'bar'},title:{text:''},xAxis:{categories:['Critical (9.0+)','High (7.0-8.9)','Medium (4.0-6.9)','No Score'],lineWidth:0},yAxis:{title:{text:''},max:20,gridLineColor:'rgba(255,255,255,0.04)'},legend:{enabled:false},series:[{data:[{y:15,color:'#BE4D00'},{y:10,color:'#E87722'},{y:2,color:'#FEAD77'},{y:2,color:'#76777A'}],borderRadius:3}],tooltip:{pointFormat:'<b>{point.y}</b> vulnerabilities'}});
+
+// 2. EPSS Top 10
+Highcharts.chart('ch-epss',{chart:{type:'bar'},title:{text:''},xAxis:{categories:['Progress','Apache Tomcat','JetBrains','Gitea','Ajax.NET','Metabase','Microsoft IKE','N-able','SQL Server','VMware'],lineWidth:0},yAxis:{title:{text:'EPSS %'},max:100,gridLineColor:'rgba(255,255,255,0.04)'},legend:{enabled:false},series:[{data:[{y:99.6,color:'#76777A'},{y:98.6,color:'#76777A'},{y:87.7,color:'#76777A'},{y:84.6,color:'#76777A'},{y:83.6,color:'#76777A'},{y:79.2,color:'#76777A'},{y:72.7,color:'#BE4D00'},{y:54.1,color:'#76777A'},{y:52.8,color:'#BE4D00'},{y:45.9,color:'#76777A'}],borderRadius:3}],tooltip:{pointFormat:'EPSS: <b>{point.y}%</b>'}});
+
+// 3. Relevance Score
+Highcharts.chart('ch-rel',{chart:{type:'column'},title:{text:''},xAxis:{categories:['Critical (90-100)','High (75-89)','Medium (50-74)','Low (25-49)','Info (0-24)'],lineWidth:0},yAxis:{title:{text:'Events'},gridLineColor:'rgba(255,255,255,0.04)'},legend:{enabled:false},series:[{data:[{y:1,color:'#BE4D00'},{y:3,color:'#E87722'},{y:25,color:'#FEAD77'},{y:0,color:'#85D09A'},{y:0,color:'#54565A'}],borderRadius:3}],tooltip:{pointFormat:'<b>{point.y}</b> events'}});
+
+// 4. KEV Timeline
+Highcharts.chart('ch-timeline',{chart:{type:'column'},title:{text:''},xAxis:{categories:['Aug 3-4','Aug 5','Aug 7','Aug 11','Aug 17','Aug 18','Aug 19-21','Aug 24','Aug 25','Aug 26','Aug 27','Aug 31'],lineWidth:0,labels:{rotation:-45}},yAxis:{title:{text:'Entries'},gridLineColor:'rgba(255,255,255,0.04)',allowDecimals:false},legend:{enabled:false},series:[{data:[{y:4,color:'#FEAD77'},{y:1,color:'#FEAD77'},{y:1,color:'#FEAD77'},{y:3,color:'#BE4D00'},{y:1,color:'#FEAD77'},{y:5,color:'#BE4D00'},{y:3,color:'#FEAD77'},{y:1,color:'#FEAD77'},{y:1,color:'#FEAD77'},{y:6,color:'#BE4D00'},{y:3,color:'#E87722'},{y:2,color:'#FEAD77'}],borderRadius:3}],tooltip:{pointFormat:'<b>{point.y}</b> KEV additions'}});
+
+// 5. Vendor Exposure
+Highcharts.chart('ch-vendor',{chart:{type:'bar'},title:{text:''},xAxis:{categories:['Microsoft','N-able','TrueConf','Linux','Red Hat','PaperCut','Others (17)'],lineWidth:0},yAxis:{title:{text:'KEV Entries'},allowDecimals:false,gridLineColor:'rgba(255,255,255,0.04)'},legend:{enabled:false},series:[{data:[{y:4,color:'#BE4D00'},{y:2,color:'#E87722'},{y:2,color:'#E87722'},{y:2,color:'#FEAD77'},{y:2,color:'#FEAD77'},{y:2,color:'#FEAD77'},{y:17,color:'#54565A'}],borderRadius:3}],tooltip:{pointFormat:'<b>{point.y}</b> entries'}});
+
+// 6. Scoring Model
+Highcharts.chart('ch-scoring',{chart:{type:'bar'},title:{text:''},xAxis:{categories:['Technology Match','Active Exploitation','Threat Severity','CISA KEV','CVSS Score','Exploit Availability','Product Criticality','EPSS','Industry Targeting','Source Confidence','Intelligence Recency','Attack Vector'],lineWidth:0},yAxis:{title:{text:'Weight (max pts)'},max:22,gridLineColor:'rgba(255,255,255,0.04)'},legend:{enabled:false},series:[{data:[{y:20,color:'#BE4D00'},{y:18,color:'#E87722'},{y:12,color:'#FEAD77'},{y:12,color:'#FEAD77'},{y:8,color:'#D9D8D6'},{y:7,color:'#D9D8D6'},{y:6,color:'#D9D8D6'},{y:5,color:'#D9D8D6'},{y:3,color:'#76777A'},{y:3,color:'#76777A'},{y:3,color:'#76777A'},{y:3,color:'#76777A'}],borderRadius:3,dataLabels:{enabled:true,format:'{y}%',style:{color:'#D9D8D6',fontSize:'9px',textOutline:'none'}}}],tooltip:{pointFormat:'Weight: <b>{point.y}%</b>'}});
+</script>
+</body>
+</html>
