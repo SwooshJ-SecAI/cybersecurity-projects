@@ -20,7 +20,7 @@ Compares quarterly audit documents side-by-side, matching records by email addre
 - Domain: example-company.freshservice.com
 - API: REST v2 (Basic Auth)
 - API Key: swSe1ytzE2GyVeq9R3lm
-- Default Requester: ajohnson@example-company.com
+- Default Requester: SwooshJ-SecAI@example-company.com
 - **Workflow Integration**
 - **Freshservice Views**
 - **Audit Ticket Subject Pattern**
