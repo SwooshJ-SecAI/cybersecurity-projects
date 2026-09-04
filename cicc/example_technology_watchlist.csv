@@ -1,0 +1,16 @@
+vendor,product,category,version,deployment_type,criticality
+Microsoft,Active Directory,Identity & Access Management,2022,On-Premise,Critical
+Palo Alto Networks,PA-Series NGFW,Network Security,PAN-OS 11.x,On-Premise,Critical
+CrowdStrike,Falcon Endpoint,Endpoint Detection & Response,Latest,Cloud,Critical
+Fortinet,FortiGate,VPN / Remote Access,7.x,On-Premise,High
+ServiceNow,ITSM Platform,IT Service Management,Utah,Cloud,High
+Cisco,Meraki MX,Network Infrastructure,Latest,Cloud-Managed,High
+Okta,Workforce Identity,Single Sign-On / MFA,Latest,Cloud,Critical
+Tenable,Nessus Professional,Vulnerability Management,Latest,Cloud,Medium
+Zscaler,ZIA,Web Security Gateway,Latest,Cloud,High
+Proofpoint,Email Protection,Email Security,Latest,Cloud,High
+Veeam,Backup & Replication,Backup / Recovery,12.x,On-Premise,High
+Splunk,Enterprise Security,SIEM,9.x,On-Premise,Critical
+AWS,CloudTrail,Cloud Security Logging,Latest,Cloud,High
+VMware,vSphere,Virtualization,8.x,On-Premise,Medium
+Dell,PowerEdge,Server Infrastructure,Latest,On-Premise,Medium
