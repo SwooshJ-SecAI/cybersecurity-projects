@@ -13,7 +13,7 @@ Built with [Amazon Quick](https://amazon.com/quick).
 
 - Vendor-specific agent generation for major security platforms
 - Knowledge base construction from vendor documentation and runbooks
-- Platform coverage: Arctic Wolf, SentinelOne, Palo Alto, Darktrace, SecurityScorecard, Freshservice, Microsoft Purview
+- Platform coverage: Splunk, Arctic Wolf, SentinelOne, Palo Alto, Darktrace, SecurityScorecard, Microsoft Purview
 - Triage workflow encoding for common alert types
 - Remediation playbook integration
 - Agent evaluation and accuracy validation
