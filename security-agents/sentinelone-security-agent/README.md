@@ -2,6 +2,12 @@
 
 > SentinelOne EDR/XDR daily operational SME for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 SentinelOne EDR/XDR daily operational SME for the organization. Covers Deep Visibility (DVQL) query building, threat detection interpretation, endpoint isolation/remediation, policy management, agent deployment, and Storyline analysis. Your go-to expert for anything SentinelOne.
