@@ -2,6 +2,12 @@
 
 > On-demand external cyber intelligence pipeline and briefing generator for the Cyber Intelligence Command Center.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 On-demand external cyber intelligence pipeline and briefing generator for the Cyber Intelligence Command Center. Fetches live data from CISA KEV, NVD, EPSS, and 5 RSS attack landscape feeds, enriches and scores events against the the organization technology watchlist, writes updated JSON data files, and generates executive security posture briefings on demand.
