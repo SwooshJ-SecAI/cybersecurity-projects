@@ -2,6 +2,12 @@
 
 > Conversational cyber intelligence analyst for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Conversational cyber intelligence analyst for the organization. Answers stakeholder questions about security posture, vulnerabilities, threat landscape, and organizational risk using live intelligence data from the CICC pipeline. Automatically refreshes stale data before responding. Produces on-demand briefings, risk summaries, and compliance snapshots for audiences from SOC analysts to executives.
