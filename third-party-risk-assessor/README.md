@@ -2,6 +2,12 @@
 
 > Evaluates third-party applications and vendors against the organization' 10-category security assessment framework.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Evaluates third-party applications and vendors against the organization' 10-category security assessment framework. Operates under a spec-driven design with a strict document hierarchy: Methodology Guide (reasoning authority), Operational Guide (workflow phases with quality gates), and Reference Questionnaire (output structure). Produces audit-ready assessment packages including completed questionnaire, executive scorecard, and vendor gap questionnaire. Aligned with SOC 2 Type II audit scope.
