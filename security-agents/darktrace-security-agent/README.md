@@ -2,6 +2,12 @@
 
 > Darktrace NDR/AI Threat Detection daily operational SME for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Darktrace NDR/AI Threat Detection daily operational SME for the organization. Covers Threat Visualizer navigation, model breach interpretation, Antigena/RESPOND autonomous response, Advanced Search queries, device profiling, and anomaly investigation. Your go-to expert for anything Darktrace.
