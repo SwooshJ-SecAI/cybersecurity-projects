@@ -2,6 +2,12 @@
 
 > SecurityScorecard Third-Party Risk/ASM daily operational SME for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 SecurityScorecard Third-Party Risk/ASM daily operational SME for the organization. Covers score interpretation, risk factor analysis, finding remediation, vendor risk management, ASI queries, API automation, and continuous monitoring. Your go-to expert for anything SecurityScorecard.
