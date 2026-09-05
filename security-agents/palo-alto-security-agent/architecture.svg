@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+      <defs>
+        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#8b949e"/>
+        </marker>
+      </defs>
+      
+      <!-- Background -->
+      <rect width="900" height="500" fill="#0d1117" rx="8"/>
+      
+      <!-- Title -->
+      <text x="450" y="30" text-anchor="middle" fill="#e6edf3" font-size="16" font-weight="bold" font-family="Segoe UI, sans-serif">Palo Alto Security Agent</text>
+      <text x="450" y="50" text-anchor="middle" fill="#8b949e" font-size="11" font-family="Segoe UI, sans-serif">Next-Generation Firewall Operations</text>
+      
+      <!-- Section Header -->
+      <text x="40" y="80" fill="#8b949e" font-size="10" font-family="Segoe UI, sans-serif" letter-spacing="1.5">WORKFLOW</text>
+      
+      <!-- Arrows -->
+      <line x1="180" y1="130" x2="206" y2="130" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrowhead)"/><line x1="350" y1="130" x2="376" y2="130" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrowhead)"/><line x1="520" y1="130" x2="546" y2="130" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrowhead)"/><line x1="690" y1="130" x2="716" y2="130" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+      
+      <!-- Cards -->
+      
+        <g>
+          <rect x="40" y="90" width="140" height="80" rx="6" ry="6"
+                fill="#161b22" stroke="#1f6feb" stroke-width="1.5"
+                style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));" />
+          <circle cx="56" cy="106" r="10" fill="#1f6feb" opacity="0.9"/>
+          <text x="56" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">1</text>
+          <text x="110" y="132" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">Firewall Policy</text>
+          <text x="110" y="148" text-anchor="middle" fill="#8b949e" font-size="9">Rule management</text>
+        </g>
+        <g>
+          <rect x="210" y="90" width="140" height="80" rx="6" ry="6"
+                fill="#161b22" stroke="#8957e5" stroke-width="1.5"
+                style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));" />
+          <circle cx="226" cy="106" r="10" fill="#8957e5" opacity="0.9"/>
+          <text x="226" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">2</text>
+          <text x="280" y="132" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">Panorama Mgmt</text>
+          <text x="280" y="148" text-anchor="middle" fill="#8b949e" font-size="9">Centralized control</text>
+        </g>
+        <g>
+          <rect x="380" y="90" width="140" height="80" rx="6" ry="6"
+                fill="#161b22" stroke="#1f6feb" stroke-width="1.5"
+                style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));" />
+          <circle cx="396" cy="106" r="10" fill="#1f6feb" opacity="0.9"/>
+          <text x="396" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">3</text>
+          <text x="450" y="132" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">Traffic Analysis</text>
+          <text x="450" y="148" text-anchor="middle" fill="#8b949e" font-size="9">Flow inspection</text>
+        </g>
+        <g>
+          <rect x="550" y="90" width="140" height="80" rx="6" ry="6"
+                fill="#161b22" stroke="#da3633" stroke-width="1.5"
+                style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));" />
+          <circle cx="566" cy="106" r="10" fill="#da3633" opacity="0.9"/>
+          <text x="566" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">4</text>
+          <text x="620" y="132" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">Threat Prevention</text>
+          <text x="620" y="148" text-anchor="middle" fill="#8b949e" font-size="9">Block + alert</text>
+        </g>
+        <g>
+          <rect x="720" y="90" width="140" height="80" rx="6" ry="6"
+                fill="#161b22" stroke="#238636" stroke-width="1.5"
+                style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));" />
+          <circle cx="736" cy="106" r="10" fill="#238636" opacity="0.9"/>
+          <text x="736" y="110" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">5</text>
+          <text x="790" y="132" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">Rule Optimization</text>
+          <text x="790" y="148" text-anchor="middle" fill="#8b949e" font-size="9">Policy tuning</text>
+        </g>
+      
+      <!-- Infrastructure Bar -->
+      <rect x="40" y="445" width="820" height="35" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="50" y="440" fill="#8b949e" font-size="9" font-family="Segoe UI, sans-serif" letter-spacing="1.5">INFRASTRUCTURE</text>
+      <text x="142" y="467" text-anchor="middle" fill="#8b949e" font-size="10">PAN-OS</text><text x="347" y="467" text-anchor="middle" fill="#8b949e" font-size="10">Panorama</text><text x="552" y="467" text-anchor="middle" fill="#8b949e" font-size="10">Threat Prevention</text><text x="757" y="467" text-anchor="middle" fill="#8b949e" font-size="10">WildFire</text>
+      
+      <!-- Version -->
+      <text x="885" y="492" text-anchor="end" fill="#484f58" font-size="9" font-family="Segoe UI, sans-serif">v1.0</text>
+    </svg>
