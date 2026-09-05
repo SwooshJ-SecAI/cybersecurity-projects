@@ -2,6 +2,12 @@
 
 > Splunk SIEM and Enterprise Security subject matter expert for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Splunk SIEM and Enterprise Security subject matter expert for the organization. Covers SPL query building, ES notable event triage, Risk-Based Alerting, data onboarding, search optimization, CIM compliance, and full Splunk operational support. Your daily-driver SME for all things Splunk.
