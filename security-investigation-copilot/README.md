@@ -1,4 +1,4 @@
-# Security Investigation Copilot Agent [LABs]
+# Security Investigation Copilot Agent
 
 > Evidence-driven Security Investigation Copilot for Security Analysts, Security Engineers, Incident Responders, Threat Hunters, Detection Engineers, and SOC personnel.
 
