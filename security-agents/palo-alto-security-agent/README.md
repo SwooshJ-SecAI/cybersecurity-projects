@@ -2,6 +2,12 @@
 
 > Palo Alto Networks NGFW daily operational SME for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Palo Alto Networks NGFW daily operational SME for the organization. Covers PAN-OS CLI, Panorama management, security policy design, log filtering, threat prevention, GlobalProtect VPN, and firewall troubleshooting. Your go-to expert for anything Palo Alto.
