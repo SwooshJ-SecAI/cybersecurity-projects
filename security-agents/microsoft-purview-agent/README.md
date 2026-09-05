@@ -2,6 +2,12 @@
 
 > Microsoft Purview Data Governance/Compliance daily operational SME for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Microsoft Purview Data Governance/Compliance daily operational SME for the organization. Covers DLP policy management, sensitivity labels, Unified Audit Log queries, eDiscovery, Insider Risk Management, compliance portal navigation, and M365 licensing. Your go-to expert for anything Purview.
