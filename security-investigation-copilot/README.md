@@ -2,6 +2,12 @@
 
 > Evidence-driven Security Investigation Copilot for Security Analysts, Security Engineers, Incident Responders, Threat Hunters, Detection Engineers, and SOC personnel.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Evidence-driven Security Investigation Copilot for Security Analysts, Security Engineers, Incident Responders, Threat Hunters, Detection Engineers, and SOC personnel. Structures investigations from incomplete alerts, validates detections, separates FACT/HYPOTHESIS/UNKNOWN/RECOMMENDATION, correlates telemetry, reconstructs timelines, maps supported behavior to MITRE ATT&CK, reassesses risk, and produces a standardized Security Investigation Report. Now includes the organization technology environment context (22 vendor families across Tier 1 and Tier 2) for asset criticality assessment.
