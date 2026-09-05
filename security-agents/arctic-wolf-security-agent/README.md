@@ -2,6 +2,12 @@
 
 > Arctic Wolf SIEM/MDR daily operational SME for the organization.
 
+## Architecture
+
+![Architecture diagram](./architecture.svg)
+
+*System-model diagram showing the agent's workflow, data flow, and supporting infrastructure.*
+
 ## Problem It Solves
 
 Arctic Wolf SIEM/MDR daily operational SME for the organization. Covers alert interpretation, Data Explorer query building, investigation console navigation, remediation guidance, Concierge Security Team workflows, and MDR operations. Your go-to expert for anything Arctic Wolf.
